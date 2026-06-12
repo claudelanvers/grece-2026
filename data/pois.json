@@ -1,0 +1,44 @@
+[
+{
+"id":"melissani",
+"name":"Grotte de Melissani",
+"stage":"J4",
+"category":"nature"
+},
+{
+"id":"nestor",
+"name":"Palais de Nestor",
+"stage":"J6",
+"category":"histoire"
+},
+{
+"id":"diros",
+"name":"Grottes de Diros",
+"stage":"J8",
+"category":"nature"
+},
+{
+"id":"mycenes",
+"name":"Mycènes",
+"stage":"J12",
+"category":"histoire"
+},
+{
+"id":"epidaure",
+"name":"Épidaure",
+"stage":"J12",
+"category":"histoire"
+},
+{
+"id":"corinthe",
+"name":"Canal de Corinthe",
+"stage":"J13",
+"category":"histoire"
+},
+{
+"id":"acropole",
+"name":"Acropole d'Athènes",
+"stage":"J14",
+"category":"histoire"
+}
+]
