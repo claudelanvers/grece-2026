@@ -1,0 +1,23 @@
+[
+{
+"id": "j01",
+"title": "Igoumenitsa → Margariti",
+"distance": 27.8,
+"elevation": 484,
+"hotel": "Palataki"
+},
+{
+"id": "j02",
+"title": "Margariti → Préveza",
+"distance": 66.3,
+"elevation": 615,
+"hotel": "Maissance"
+},
+{
+"id": "j03",
+"title": "Préveza → Vassiliki",
+"distance": 59.9,
+"elevation": 613,
+"hotel": "Elisso"
+}
+]
