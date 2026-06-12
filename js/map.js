@@ -23,3 +23,6 @@ patras
 map.fitBounds(group.getBounds(), {
 padding: [50, 50]
 });
+setTimeout(() => {
+  map.invalidateSize();
+}, 500);
