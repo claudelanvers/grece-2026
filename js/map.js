@@ -7,10 +7,19 @@ attribution: '© OpenStreetMap'
 }
 ).addTo(map);
 
-L.marker([39.503, 20.263])
+const igoumenitsa = L.marker([39.503, 20.263])
 .addTo(map)
 .bindPopup('Départ : Igoumenitsa');
 
-L.marker([38.246, 21.734])
+const patras = L.marker([38.246, 21.734])
 .addTo(map)
 .bindPopup('Arrivée : Patras');
+
+const group = L.featureGroup([
+igoumenitsa,
+patras
+]);
+
+map.fitBounds(group.getBounds(), {
+padding: [50, 50]
+});
