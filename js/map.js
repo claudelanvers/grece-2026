@@ -35,11 +35,6 @@ async: true,
 ).on('loaded', function(e) {
 map.fitBounds(e.target.getBounds());
 }).addTo(map);
-L.marker([39.386, 20.438])
+L.marker([39.503, 20.263])
 .addTo(map)
-.bindPopup(`     <b>Étape J1</b><br>
-    Igoumenitsa → Margariti<br>
-    Distance : 27,8 km<br>
-    D+ : 484 m<br>
-    Hôtel : Palataki
-  `);
+.bindPopup("TEST MARGARITI");
