@@ -35,6 +35,6 @@ async: true,
 ).on('loaded', function(e) {
 map.fitBounds(e.target.getBounds());
 }).addTo(map);
-L.marker([39.503, 20.263])
+L.marker([39.3858, 20.4387])
 .addTo(map)
 .bindPopup("TEST MARGARITI");
