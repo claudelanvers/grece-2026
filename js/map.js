@@ -26,3 +26,16 @@ padding: [50, 50]
 setTimeout(() => {
   map.invalidateSize();
 }, 500);
+new L.GPX(
+'gpx/a_j1_vers_margariti-24158784-1780826430-638.gpx',
+{
+async: true,
+marker_options: {
+startIconUrl: null,
+endIconUrl: null,
+shadowUrl: null
+}
+}
+).on('loaded', function(e) {
+map.fitBounds(e.target.getBounds());
+}).addTo(map);
