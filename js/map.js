@@ -53,14 +53,23 @@ weight: 6
 }
 }
 ).addTo(map);
-L.marker([39.3858, 20.4387])
+L.circleMarker([39.3858, 20.4387], {
+  radius: 12,
+  color: 'orange'
+})
 .addTo(map)
 .bindPopup('<b>Palataki</b><br>Margariti');
 
-L.marker([38.9597, 20.7517])
+L.circleMarker([38.9597, 20.7517], {
+  radius: 12,
+  color: 'orange'
+})
 .addTo(map)
 .bindPopup('<b>Maissance</b><br>Préveza');
 
-L.marker([38.6298, 20.6068])
+L.circleMarker([38.6298, 20.6068], {
+  radius: 12,
+  color: 'orange'
+})
 .addTo(map)
 .bindPopup('<b>Elisso</b><br>Vassiliki');
