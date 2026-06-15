@@ -32,7 +32,14 @@ new L.GPX(
 async: true,
 
 }
-).on('loaded', function(e) {
+)
+new L.GPX(
+  'gpx/b_j2_vers_preveza-24158803-1780826447-167.gpx',
+  {
+    async: true
+  }
+).addTo(map);  
+  .on('loaded', function(e) {
 map.fitBounds(e.target.getBounds());
 }).addTo(map);
 L.marker([39.3858, 20.4387])
