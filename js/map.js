@@ -46,6 +46,10 @@ weight: 5
 new L.GPX(
 'gpx/c_j3_vers_vassiliki-24158846-1780826452-622.gpx',
 {
-async: true
+async: true,
+polyline_options: {
+color: 'green',
+weight: 6
+}
 }
 ).addTo(map);
