@@ -43,4 +43,9 @@ weight: 5
 }
 }
 ).addTo(map);
-
+new L.GPX(
+'gpx/c_j3_vers_vassiliki-24158846-1780826452-622.gpx',
+{
+async: true
+}
+).addTo(map);
