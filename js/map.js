@@ -53,3 +53,14 @@ weight: 6
 }
 }
 ).addTo(map);
+L.marker([39.3858, 20.4387])
+.addTo(map)
+.bindPopup('<b>Palataki</b><br>Margariti');
+
+L.marker([38.9597, 20.7517])
+.addTo(map)
+.bindPopup('<b>Maissance</b><br>Préveza');
+
+L.marker([38.6298, 20.6068])
+.addTo(map)
+.bindPopup('<b>Elisso</b><br>Vassiliki');
