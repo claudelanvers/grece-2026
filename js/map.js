@@ -168,10 +168,10 @@ L.circleMarker([37.5960, 23.0738], {
   </a>
 `);
 L.circleMarker([37.9338, 22.9958], {
-  radius: 30,
+  radius: 10,
   color: 'lime',
   fillColor: 'lime',
-  fillOpacity: 1
+  fillOpacity: 0.8
 })
 .addTo(map)
 .bindPopup(`
