@@ -121,10 +121,10 @@ L.marker([38.246, 21.734])
 .addTo(map)
 .bindPopup('<b>Arrivée finale</b><br>Patras');
 L.circleMarker([37.0272, 21.695], {
-  radius: 10,
-  color: 'green',
-  fillColor: 'green',
-  fillOpacity: 0.8
+  radius: 20,
+  color: 'lime',
+  fillColor: 'lime',
+  fillOpacity: 1
 })
 .addTo(map)
-.bindPopup('<b>🏛️ Palais de Nestor</b>');
+.bindPopup('🏛️ PALAIS DE NESTOR');
