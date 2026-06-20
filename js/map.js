@@ -137,7 +137,7 @@ L.circleMarker([37.7308, 22.7547], {
 .addTo(map)
 .bindPopup('🏛️ MYCÈNES');
 L.circleMarker([37.5960, 23.0738], {
-  radius: 10,
+  radius: 11,
   color: 'yellow',
   fillColor: 'yellow',
   fillOpacity: 0.8
