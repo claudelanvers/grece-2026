@@ -120,3 +120,6 @@ L.marker([38.192, 22.201])
 L.marker([38.246, 21.734])
 .addTo(map)
 .bindPopup('<b>Arrivée finale</b><br>Patras');
+L.marker([37.0272, 21.695])
+  .addTo(map)
+  .bindPopup('<em>Palais de Nestor</em>');
