@@ -167,3 +167,48 @@ L.circleMarker([37.5960, 23.0738], {
      📖 Wikipédia
   </a>
 `);
+L.circleMarker([37.9338, 22.9958], {
+  radius: 10,
+  color: 'green',
+  fillColor: 'green',
+  fillOpacity: 0.8
+})
+.addTo(map)
+.bindPopup(`
+  <b>🏛️ Canal de Corinthe</b><br>
+  Canal reliant le golfe de Corinthe à la mer Égée.<br>
+  <a href="https://fr.wikipedia.org/wiki/Canal_de_Corinthe"
+     target="_blank">
+     📖 Wikipédia
+  </a>
+`);
+L.circleMarker([38.2676, 20.6255], {
+  radius: 10,
+  color: 'cyan',
+  fillColor: 'cyan',
+  fillOpacity: 0.8
+})
+.addTo(map)
+.bindPopup(`
+  <b>🌊 Grotte de Melissani</b><br>
+  Lac souterrain spectaculaire sur l'île de Céphalonie.<br>
+  <a href="https://fr.wikipedia.org/wiki/Grotte_de_Melissani"
+     target="_blank">
+     📖 Wikipédia
+  </a>
+`);
+L.circleMarker([36.6705, 22.3725], {
+  radius: 10,
+  color: 'cyan',
+  fillColor: 'cyan',
+  fillOpacity: 0.8
+})
+.addTo(map)
+.bindPopup(`
+  <b>🌊 Grottes de Diros</b><br>
+  Réseau de grottes marines parmi les plus célèbres de Grèce.<br>
+  <a href="https://fr.wikipedia.org/wiki/Grottes_de_Diros"
+     target="_blank">
+     📖 Wikipédia
+  </a>
+`);
