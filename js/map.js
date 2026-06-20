@@ -212,3 +212,93 @@ L.circleMarker([36.6705, 22.3725], {
      📖 Wikipédia
   </a>
 `);
+L.circleMarker([37.9338, 22.9958], {
+  radius: 30,
+  color: 'lime',
+  fillColor: 'lime',
+  fillOpacity: 1
+})
+.addTo(map)
+.bindPopup(`
+  <b>🏛️ CANAL DE CORINTHE</b><br>
+  Canal reliant le golfe de Corinthe à la mer Égée.<br>
+  <a href="https://fr.wikipedia.org/wiki/Canal_de_Corinthe"
+     target="_blank">
+     📖 Wikipédia
+  </a>
+`);
+L.circleMarker([37.9715, 23.7267], {
+  radius: 10,
+  color: 'green',
+  fillColor: 'green',
+  fillOpacity: 0.8
+})
+.addTo(map)
+.bindPopup(`
+  <b>🏛️ Acropole d'Athènes</b><br>
+  Le monument emblématique de la Grèce antique.<br>
+  <a href="https://fr.wikipedia.org/wiki/Acropole_d%27Ath%C3%A8nes"
+     target="_blank">
+     📖 Wikipédia
+  </a>
+`);
+L.circleMarker([37.567, 22.801], {
+  radius: 8,
+  color: 'orange',
+  fillColor: 'orange',
+  fillOpacity: 0.8
+})
+.addTo(map)
+.bindPopup(`
+  <b>🏙️ Nauplie</b><br>
+  Première capitale de la Grèce moderne.<br>
+  <a href="https://fr.wikipedia.org/wiki/Nauplie"
+     target="_blank">
+     📖 Wikipédia
+  </a>
+`);
+L.circleMarker([36.758, 22.565], {
+  radius: 8,
+  color: 'orange',
+  fillColor: 'orange',
+  fillOpacity: 0.8
+})
+.addTo(map)
+.bindPopup(`
+  <b>🏙️ Gythio</b><br>
+  Ancien port de Sparte et charmante ville du Magne.<br>
+  <a href="https://fr.wikipedia.org/wiki/Gythio"
+     target="_blank">
+     📖 Wikipédia
+  </a>
+`);
+L.circleMarker([37.039, 22.114], {
+  radius: 8,
+  color: 'orange',
+  fillColor: 'orange',
+  fillOpacity: 0.8
+})
+.addTo(map)
+.bindPopup(`
+  <b>🏙️ Kalamata</b><br>
+  Capitale de la Messénie, célèbre pour ses olives.<br>
+  <a href="https://fr.wikipedia.org/wiki/Kalamata"
+     target="_blank">
+     📖 Wikipédia
+  </a>
+`);
+L.circleMarker([36.960, 21.655], {
+  radius: 10,
+  color: 'cyan',
+  fillColor: 'cyan',
+  fillOpacity: 0.8
+})
+.addTo(map)
+.bindPopup(`
+  <b>🌊 Lagune de Gialova</b><br>
+  Réserve naturelle et zone humide remarquable de Messénie.<br>
+  <a href="https://fr.wikipedia.org/wiki/Lagune_de_Gialova"
+     target="_blank">
+     📖 Wikipédia
+  </a>
+`);
