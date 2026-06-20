@@ -158,4 +158,12 @@ L.circleMarker([37.5960, 23.0738], {
   fillOpacity: 0.8
 })
 .addTo(map)
-.bindPopup('🏛️ ÉPIDAURE');
+
+.bindPopup(`
+  <b>🏛️ Épidaure</b><br>
+  Théâtre antique et sanctuaire d'Asclépios.<br>
+  <a href="https://fr.wikipedia.org/wiki/%C3%89pidaure"
+     target="_blank">
+     📖 Wikipédia
+  </a>
+`);
