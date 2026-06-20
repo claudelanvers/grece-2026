@@ -121,26 +121,26 @@ L.marker([38.246, 21.734])
 .addTo(map)
 .bindPopup('<b>Arrivée finale</b><br>Patras');
 L.circleMarker([37.0272, 21.695], {
-  radius: 20,
+  radius: 10,
   color: 'lime',
   fillColor: 'lime',
-  fillOpacity: 1
+  fillOpacity: 0.8
 })
 .addTo(map)
 .bindPopup('🏛️ PALAIS DE NESTOR');
 L.circleMarker([37.7308, 22.7547], {
-  radius: 25,
+  radius: 10,
   color: 'lime',
   fillColor: 'lime',
-  fillOpacity: 1
+  fillOpacity: 0.8
 })
 .addTo(map)
 .bindPopup('🏛️ MYCÈNES');
 L.circleMarker([37.5960, 23.0738], {
-  radius: 25,
+  radius: 10,
   color: 'yellow',
   fillColor: 'yellow',
-  fillOpacity: 1
+  fillOpacity: 0.8
 })
 .addTo(map)
 .bindPopup('🏛️ ÉPIDAURE');
