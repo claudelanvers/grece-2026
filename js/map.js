@@ -143,7 +143,14 @@ L.circleMarker([37.7308, 22.7547], {
   fillOpacity: 0.8
 })
 .addTo(map)
-.bindPopup('🏛️ MYCÈNES');
+.bindPopup(`
+  <b>🏛️ Mycènes</b><br>
+  Site archéologique majeur de l'Argolide.<br>
+  <a href="https://fr.wikipedia.org/wiki/Myc%C3%A8nes"
+     target="_blank">
+     📖 Wikipédia
+  </a>
+`);
 L.circleMarker([37.5960, 23.0738], {
   radius: 11,
   color: 'yellow',
