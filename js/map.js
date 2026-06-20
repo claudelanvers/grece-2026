@@ -127,7 +127,15 @@ L.circleMarker([37.0272, 21.695], {
   fillOpacity: 0.8
 })
 .addTo(map)
-.bindPopup('🏛️ PALAIS DE NESTOR');
+
+.bindPopup(`
+  <b>🏛️ Palais de Nestor</b><br>
+  Site mycénien près de Pylos.<br>
+  <a href="https://fr.wikipedia.org/wiki/Palais_de_Nestor"
+     target="_blank">
+     Wikipédia
+  </a>
+`);
 L.circleMarker([37.7308, 22.7547], {
   radius: 10,
   color: 'lime',
