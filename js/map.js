@@ -73,3 +73,50 @@ L.circleMarker([38.6298, 20.6068], {
 })
 .addTo(map)
 .bindPopup('<b>Elisso</b><br>Vassiliki');
+L.marker([38.151, 20.772])
+.addTo(map)
+.bindPopup('<b>Oceanis</b><br>Poros');
+
+L.marker([37.483, 21.650])
+.addTo(map)
+.bindPopup('<b>Rex</b><br>Zacharo');
+
+L.marker([36.913, 21.696])
+.addTo(map)
+.bindPopup('<b>Imathoessa</b><br>Pylos');
+
+L.marker([37.039, 22.114])
+.addTo(map)
+.bindPopup('<b>Akti Taygetos</b><br>Kalamata');
+
+L.marker([36.710, 22.396])
+.addTo(map)
+.bindPopup('<b>Porto Vitilo</b><br>Oitylo');
+
+L.marker([36.758, 22.565])
+.addTo(map)
+.bindPopup('<b>Infinity</b><br>Gythio');
+
+L.marker([37.089, 22.729])
+.addTo(map)
+.bindPopup('<b>Apollo Guest House</b><br>Kosmas');
+
+L.marker([37.414, 22.765])
+.addTo(map)
+.bindPopup('<b>Astros Beach Boutique</b><br>Astros');
+
+L.marker([37.568, 22.806])
+.addTo(map)
+.bindPopup('<b>Ippoliti</b><br>Nauplie');
+
+L.marker([37.938, 22.932])
+.addTo(map)
+.bindPopup('<b>Avenue Blue</b><br>Corinthe');
+
+L.marker([38.192, 22.201])
+.addTo(map)
+.bindPopup('<b>Porto & Mare</b><br>Diakopto');
+
+L.marker([38.246, 21.734])
+.addTo(map)
+.bindPopup('<b>Arrivée finale</b><br>Patras');
