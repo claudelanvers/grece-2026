@@ -129,18 +129,18 @@ L.circleMarker([37.0272, 21.695], {
 .addTo(map)
 .bindPopup('🏛️ PALAIS DE NESTOR');
 L.circleMarker([37.7308, 22.7547], {
-  radius: 12,
-  color: 'green',
-  fillColor: 'green',
-  fillOpacity: 0.8
+  radius: 25,
+  color: 'lime',
+  fillColor: 'lime',
+  fillOpacity: 1
 })
 .addTo(map)
-.bindPopup('🏛️ Mycènes');
+.bindPopup('🏛️ MYCÈNES');
 L.circleMarker([37.5960, 23.0738], {
-  radius: 12,
-  color: 'green',
-  fillColor: 'green',
-  fillOpacity: 0.8
+  radius: 25,
+  color: 'yellow',
+  fillColor: 'yellow',
+  fillOpacity: 1
 })
 .addTo(map)
-.bindPopup('🏛️ Épidaure');
+.bindPopup('🏛️ ÉPIDAURE');
