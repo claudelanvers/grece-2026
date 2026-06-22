@@ -53,6 +53,38 @@ weight: 6
 }
 }
 ).addTo(map);
+new L.GPX(
+'gpx/d_j4_vers_poros-24212308-1780826457-677.gpx',
+{
+  async: true,
+  polyline_options: {
+    color: 'purple',
+    weight: 5
+  }
+}
+).addTo(map);
+
+new L.GPX(
+'gpx/e_j5_vers_zacharo-24158926-1780826461-994.gpx',
+{
+  async: true,
+  polyline_options: {
+    color: 'orange',
+    weight: 5
+  }
+}
+).addTo(map);
+
+new L.GPX(
+'gpx/f_j6_vers_pylos-24158965-1780826466-970.gpx',
+{
+  async: true,
+  polyline_options: {
+    color: 'brown',
+    weight: 5
+  }
+}
+).addTo(map);
 L.circleMarker([39.3858, 20.4387], {
   radius: 12,
   color: 'orange'
