@@ -228,7 +228,7 @@ L.circleMarker([37.9338, 22.9958], {
   </a>
 `);
 L.circleMarker([37.9715, 23.7267], {
-  radius: 10,
+  radius: 11,
   color: 'green',
   fillColor: 'green',
   fillOpacity: 0.8
