@@ -145,13 +145,13 @@ new L.GPX(
   }
 }
 ).addTo(map);
-gpx/m_j13_vers_corinthe-24161474-1780826499-584.gpx
+
 L.circleMarker([39.3858, 20.4387], {
   radius: 12,
   color: 'orange'
 })
 .addTo(map)
-  gpx/n_j14_vers_diakopto-24161507-1780826504-461.gpx
+  
 .bindPopup('<b>Palataki</b><br>Margariti');
 
 L.circleMarker([38.9597, 20.7517], {
@@ -159,7 +159,7 @@ L.circleMarker([38.9597, 20.7517], {
   color: 'orange'
 })
 .addTo(map)
-  gpx/o_j15_vers_patras-24161523-1780826509-105.gpx
+  
 .bindPopup('<b>Maissance</b><br>Préveza');
 
 L.circleMarker([38.6298, 20.6068], {
