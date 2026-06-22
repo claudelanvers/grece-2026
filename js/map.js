@@ -29,7 +29,16 @@ setTimeout(() => {
 new L.GPX(
 'gpx/a_j1_vers_margariti-24158784-1780826430-638.gpx',
 {
-async: true
+  async: true,
+  marker_options: {
+    startIconUrl: null,
+    endIconUrl: null,
+    shadowUrl: null
+  },
+  polyline_options: {
+    color: 'blue',
+    weight: 5
+  }
 }
 ).addTo(map);
 
