@@ -85,6 +85,36 @@ new L.GPX(
   }
 }
 ).addTo(map);
+new L.GPX(
+'gpx/g_j7_vers_kalamata-24161278-1780826472-652.gpx',
+{
+  async: true,
+  polyline_options: {
+    color: 'darkblue',
+    weight: 5
+  }
+}
+).addTo(map);
+new L.GPX(
+'gpx/h_j8_vers_oitolou-24161332-1780826476-761.gpx',
+{
+  async: true,
+  polyline_options: {
+    color: 'darkmagenta',
+    weight: 5
+  }
+}
+).addTo(map);
+new L.GPX(
+'gpx/i_j9_vers_gythio-24161353-1780826480-121.gpx',
+{
+  async: true,
+  polyline_options: {
+    color: 'darkcyan',
+    weight: 5
+  }
+}
+).addTo(map);
 L.circleMarker([39.3858, 20.4387], {
   radius: 12,
   color: 'orange'
