@@ -145,12 +145,13 @@ new L.GPX(
   }
 }
 ).addTo(map);
-
+gpx/m_j13_vers_corinthe-24161474-1780826499-584.gpx
 L.circleMarker([39.3858, 20.4387], {
   radius: 12,
   color: 'orange'
 })
 .addTo(map)
+  
 .bindPopup('<b>Palataki</b><br>Margariti');
 
 L.circleMarker([38.9597, 20.7517], {
