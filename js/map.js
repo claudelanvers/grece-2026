@@ -302,3 +302,24 @@ L.circleMarker([36.960, 21.655], {
      📖 Wikipédia
   </a>
 `);
+const legend = L.control({position: 'bottomright'});
+
+legend.onAdd = function () {
+  const div = L.DomUtil.create('div', 'info legend');
+  div.style.background = 'white';
+  div.style.padding = '10px';
+  div.style.border = '2px solid #ccc';
+  div.style.borderRadius = '5px';
+
+  div.innerHTML = `
+    <h4>Grèce 2026</h4>
+    🚴 Étapes GPX<br>
+    🏨 Hôtels<br>
+    🏛️ Sites historiques<br>
+    🌊 Sites naturels
+  `;
+
+  return div;
+};
+
+legend.addTo(map);
