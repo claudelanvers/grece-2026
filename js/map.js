@@ -151,7 +151,7 @@ L.circleMarker([39.3858, 20.4387], {
   color: 'orange'
 })
 .addTo(map)
-  
+  gpx/n_j14_vers_diakopto-24161507-1780826504-461.gpx
 .bindPopup('<b>Palataki</b><br>Margariti');
 
 L.circleMarker([38.9597, 20.7517], {
