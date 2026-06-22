@@ -168,19 +168,15 @@ L.circleMarker([37.5960, 23.0738], {
   </a>
 `);
 L.circleMarker([37.9338, 22.9958], {
-  radius: 10,
-  color: 'red',
-fillColor: 'red',
-  fillOpacity: 0.8
+  radius: 20,
+  color: 'black',
+  fillColor: 'black',
+  fillOpacity: 1
 })
 .addTo(map)
 .bindPopup(`
-  <b>🏛️ CANAL DE CORINTHE</b><br>
-  Canal reliant le golfe de Corinthe à la mer Égée.<br>
-  <a href="https://fr.wikipedia.org/wiki/Canal_de_Corinthe"
-     target="_blank">
-     📖 Wikipédia
-  </a>
+  <b>🏛️ TEST CORINTHE</b><br>
+  Canal de Corinthe
 `);
 L.circleMarker([38.2676, 20.6255], {
   radius: 10,
