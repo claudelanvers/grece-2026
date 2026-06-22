@@ -115,6 +115,37 @@ new L.GPX(
   }
 }
 ).addTo(map);
+new L.GPX(
+'gpx/j_j10_vers_kosmas-24161381-1780826485-761.gpx',
+{
+  async: true,
+  polyline_options: {
+    color: 'deeppink',
+    weight: 5
+  }
+}
+).addTo(map);
+new L.GPX(
+'gpx/k_j11_vers_astros-24161419-1780826489-993.gpx',
+{
+  async: true,
+  polyline_options: {
+    color: 'gold',
+    weight: 5
+  }
+}
+).addTo(map);
+new L.GPX(
+'gpx/l_j12_vers_nauplie-24161429-1780826495-955.gpx',
+{
+  async: true,
+  polyline_options: {
+    color: 'navy',
+    weight: 5
+  }
+}
+).addTo(map);
+
 L.circleMarker([39.3858, 20.4387], {
   radius: 12,
   color: 'orange'
