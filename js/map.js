@@ -31,17 +31,18 @@ new L.GPX(
 {
   async: true,
   marker_options: {
-    startIconUrl: null,
-    endIconUrl: null,
-    shadowUrl: null
-  },
-  polyline_options: {
-    color: 'blue',
-    weight: 5
+    startIconUrl: '',
+    endIconUrl: '',
+    shadowUrl: ''
   }
 }
-).addTo(map);
-
+).on('loaded', function(e) {
+  e.target.getLayers().forEach(function(layer) {
+    if (layer instanceof L.Marker) {
+      map.removeLayer(layer);
+    }
+  });
+}).addTo(map);
 new L.GPX(
 'gpx/b_j2_vers_preveza-24158803-1780826447-167.gpx',
 {
