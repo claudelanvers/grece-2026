@@ -159,6 +159,7 @@ L.circleMarker([38.9597, 20.7517], {
   color: 'orange'
 })
 .addTo(map)
+  gpx/o_j15_vers_patras-24161523-1780826509-105.gpx
 .bindPopup('<b>Maissance</b><br>Préveza');
 
 L.circleMarker([38.6298, 20.6068], {
