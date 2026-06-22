@@ -169,8 +169,8 @@ L.circleMarker([37.5960, 23.0738], {
 `);
 L.circleMarker([37.9338, 22.9958], {
   radius: 10,
-  color: 'lime',
-  fillColor: 'lime',
+  color: 'red',
+fillColor: 'red',
   fillOpacity: 0.8
 })
 .addTo(map)
