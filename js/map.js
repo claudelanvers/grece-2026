@@ -421,6 +421,66 @@ L.circleMarker([36.960, 21.655], {
      📖 Wikipédia
   </a>
 `);
+L.circleMarker([37.6383, 21.6300], {
+  radius: 10,
+  color: 'green',
+  fillColor: 'green',
+  fillOpacity: 0.8
+})
+.addTo(map)
+.bindPopup(`
+  <b>🏛️ Olympie</b><br>
+  Berceau des Jeux olympiques antiques.<br>
+  <a href="https://fr.wikipedia.org/wiki/Olympie"
+     target="_blank">
+     📖 Wikipédia
+  </a>
+`);
+L.circleMarker([37.0736, 22.3695], {
+  radius: 10,
+  color: 'green',
+  fillColor: 'green',
+  fillOpacity: 0.8
+})
+.addTo(map)
+.bindPopup(`
+  <b>🏛️ Mystra</b><br>
+  Ancienne cité byzantine classée au patrimoine mondial.<br>
+  <a href="https://fr.wikipedia.org/wiki/Mystra"
+     target="_blank">
+     📖 Wikipédia
+  </a>
+`);
+L.circleMarker([36.6878, 23.0565], {
+  radius: 10,
+  color: 'orange',
+  fillColor: 'orange',
+  fillOpacity: 0.8
+})
+.addTo(map)
+.bindPopup(`
+  <b>🏰 Monemvasia</b><br>
+  Cité médiévale fortifiée sur un îlot rocheux.<br>
+  <a href="https://fr.wikipedia.org/wiki/Monemvasia"
+     target="_blank">
+     📖 Wikipédia
+  </a>
+`);
+L.circleMarker([36.9528, 21.6578], {
+  radius: 10,
+  color: 'cyan',
+  fillColor: 'cyan',
+  fillOpacity: 0.8
+})
+.addTo(map)
+.bindPopup(`
+  <b>🌊 Plage de Voidokilia</b><br>
+  L'une des plus belles plages de Grèce.<br>
+  <a href="https://fr.wikipedia.org/wiki/Voidokilia"
+     target="_blank">
+     📖 Wikipédia
+  </a>
+`);
 const legend = L.control({position: 'bottomright'});
 
 legend.onAdd = function () {
