@@ -43,16 +43,7 @@ new L.GPX(
     }
   });
 }).addTo(map);
-new L.GPX(
-'gpx/b_j2_vers_preveza-24158803-1780826447-167.gpx',
-{
-async: true,
-polyline_options: {
-color: 'red',
-weight: 5
-}
-}
-).addTo(map);
+
 new L.GPX(
 'gpx/c_j3_vers_vassiliki-24158846-1780826452-622.gpx',
 {
@@ -61,7 +52,22 @@ polyline_options: {
 color: 'green',
 weight: 6
 }
+}new L.GPX(
+'gpx/b_j2_vers_preveza-....gpx',
+{
+  async: true,
+  polyline_options: {
+    color: 'red',
+    weight: 5
+  }
 }
+).on('loaded', function(e) {
+  e.target.getLayers().forEach(function(layer) {
+    if (layer instanceof L.Marker) {
+      map.removeLayer(layer);
+    }
+  });
+}).addTo(map);
 ).addTo(map);
 new L.GPX(
 'gpx/d_j4_vers_poros-24212308-1780826457-677.gpx',
