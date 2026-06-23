@@ -505,9 +505,11 @@ legend.addTo(map);
 L.marker([39.3858, 20.4387])
 .addTo(map)
 .bindPopup(`
-  <b>🚴 J1 – Margariti</b><br>
-  ⛰️ D+ : 484 m<br>
-  🏨 Palataki
+  .bindPopup(`
+<b>🚴 J1 – Margariti</b><br>
+📏 27,8 km<br>
+⛰️ D+ : 484 m<br>
+🏨 Palataki
 `);
 L.marker([38.9597, 20.7517])
 .addTo(map)
