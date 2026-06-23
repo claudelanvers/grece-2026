@@ -48,8 +48,8 @@ new L.GPX(
 {
   async: true,
   polyline_options: {
-    color: 'red',
-    weight: 5
+    color: 'black',
+    weight: 12
   }
 }
 ).addTo(map);
