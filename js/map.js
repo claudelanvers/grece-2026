@@ -502,3 +502,38 @@ legend.onAdd = function () {
 };
 
 legend.addTo(map);
+L.marker([39.3858, 20.4387])
+.addTo(map)
+.bindPopup(`
+  <b>🚴 J1 – Margariti</b><br>
+  ⛰️ D+ : 484 m<br>
+  🏨 Palataki
+`);
+L.marker([38.9597, 20.7517])
+.addTo(map)
+.bindPopup(`
+  <b>🚴 J2 – Préveza</b><br>
+  ⛰️ D+ : 326 m<br>
+  🏨 Maissance
+`);
+L.marker([38.6298, 20.6068])
+.addTo(map)
+.bindPopup(`
+  <b>🚴 J3 – Vassiliki</b><br>
+  ⛰️ D+ : 425 m<br>
+  🏨 Elisso
+`);
+L.marker([38.1500, 20.7710])
+.addTo(map)
+.bindPopup(`
+  <b>🚴 J4 – Poros</b><br>
+  ⛰️ D+ : 1070 m<br>
+  🏨 Oceanis
+`);
+L.marker([37.4830, 21.6500])
+.addTo(map)
+.bindPopup(`
+  <b>🚴 J5 – Zacharo</b><br>
+  ⛰️ D+ : 486 m<br>
+  🏨 Rex
+`);
