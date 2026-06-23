@@ -44,7 +44,7 @@ new L.GPX(
   });
 }).addTo(map);
 new L.GPX(
-'gpx/b_j2_vers_preveza-....gpx',
+'gpx/b_j2_vers_preveza-24158803-1780826447-167.gpx',
 {
   async: true,
   polyline_options: {
