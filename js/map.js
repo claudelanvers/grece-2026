@@ -546,18 +546,16 @@ const etapes = [
 ];
 etapes.forEach(e => {
 
+ etapes.forEach(function(e) {
+
   L.marker(e.coords)
     .addTo(map)
-    .bindPopup(`
-      <b>🚴 ${e.nom}</b><br>
-      📏 ${e.distance}<br>
-      ⛰️ D+ : ${e.denivele}<br>
-      🏨 ${e.hotel}<br><br>
-
-      <a href="https://www.openrunner.com/route-details/${e.openrunner}"
-         target="_blank">
-         📍 Parcours OpenRunner
-      </a>
-    `);
+    .bindPopup(
+      "<b>" + e.nom + "</b><br>" +
+      "Distance : " + e.distance + "<br>" +
+      "D+ : " + e.denivele + "<br>" +
+      "Hotel : " + e.hotel + "<br><br>" +
+      '<a href="https://www.openrunner.com/route-details/' + e.openrunner + '" target="_blank">Parcours OpenRunner</a>'
+    );
 
 });
