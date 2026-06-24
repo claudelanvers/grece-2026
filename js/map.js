@@ -624,9 +624,8 @@ const etapes = [
   openrunner: "24161523"
 }
 ];
-etapes.forEach(e => {
-
- etapes.forEach(function(e) {
+ 
+etapes.forEach(function(e) {
 
   L.marker(e.coords)
     .addTo(map)
