@@ -502,40 +502,62 @@ legend.onAdd = function () {
 };
 
 legend.addTo(map);
-L.marker([39.3858, 20.4387])
-.addTo(map)
-.bindPopup(`
-  .bindPopup(`
-<b>🚴 J1 – Margariti</b><br>
-📏 27,8 km<br>
-⛰️ D+ : 484 m<br>
-🏨 Palataki
-`);
-L.marker([38.9597, 20.7517])
-.addTo(map)
-.bindPopup(`
-  <b>🚴 J2 – Préveza</b><br>
-  ⛰️ D+ : 326 m<br>
-  🏨 Maissance
-`);
-L.marker([38.6298, 20.6068])
-.addTo(map)
-.bindPopup(`
-  <b>🚴 J3 – Vassiliki</b><br>
-  ⛰️ D+ : 425 m<br>
-  🏨 Elisso
-`);
-L.marker([38.1500, 20.7710])
-.addTo(map)
-.bindPopup(`
-  <b>🚴 J4 – Poros</b><br>
-  ⛰️ D+ : 1070 m<br>
-  🏨 Oceanis
-`);
-L.marker([37.4830, 21.6500])
-.addTo(map)
-.bindPopup(`
-  <b>🚴 J5 – Zacharo</b><br>
-  ⛰️ D+ : 486 m<br>
-  🏨 Rex
-`);
+const etapes = [
+{
+  nom: "J1 – Margariti",
+  coords: [39.3858, 20.4387],
+  distance: "27,8 km",
+  denivele: "484 m",
+  hotel: "Palataki",
+  openrunner: "24158784"
+},
+{
+  nom: "J2 – Préveza",
+  coords: [38.9597, 20.7517],
+  distance: "66,3 km",
+  denivele: "615 m",
+  hotel: "Maissance",
+  openrunner: "24158803"
+},
+{
+  nom: "J3 – Vassiliki",
+  coords: [38.6298, 20.6068],
+  distance: "60,0 km",
+  denivele: "613 m",
+  hotel: "Elisso",
+  openrunner: "24158846"
+},
+{
+  nom: "J4 – Poros",
+  coords: [38.1510, 20.7720],
+  distance: "63,4 km",
+  denivele: "1070 m",
+  hotel: "Oceanis",
+  openrunner: "24212308"
+},
+{
+  nom: "J5 – Zacharo",
+  coords: [37.4830, 21.6500],
+  distance: "82,3 km",
+  denivele: "486 m",
+  hotel: "Rex",
+  openrunner: "24158926"
+}
+];
+etapes.forEach(e => {
+
+  L.marker(e.coords)
+    .addTo(map)
+    .bindPopup(`
+      <b>🚴 ${e.nom}</b><br>
+      📏 ${e.distance}<br>
+      ⛰️ D+ : ${e.denivele}<br>
+      🏨 ${e.hotel}<br><br>
+
+      <a href="https://www.openrunner.com/route-details/${e.openrunner}"
+         target="_blank">
+         📍 Parcours OpenRunner
+      </a>
+    `);
+
+});
