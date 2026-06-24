@@ -542,6 +542,86 @@ const etapes = [
   denivele: "486 m",
   hotel: "Rex",
   openrunner: "24158926"
+},
+  {
+  nom: "J6 – Pylos",
+  coords: [36.913, 21.696],
+  distance: "81,1 km",
+  denivele: "578 m",
+  hotel: "Imathoessa",
+  openrunner: "24158965"
+},
+{
+  nom: "J7 – Kalamata",
+  coords: [37.039, 22.114],
+  distance: "51,6 km",
+  denivele: "608 m",
+  hotel: "Akti Taygetos",
+  openrunner: "24161278"
+},
+{
+  nom: "J8 – Oitylo",
+  coords: [36.710, 22.396],
+  distance: "68,6 km",
+  denivele: "1147 m",
+  hotel: "Porto Vitilo",
+  openrunner: "24161332"
+},
+{
+  nom: "J9 – Gythio",
+  coords: [36.758, 22.565],
+  distance: "54,3 km",
+  denivele: "870 m",
+  hotel: "Infinity",
+  openrunner: "24161353"
+},
+{
+  nom: "J10 – Kosmas",
+  coords: [37.089, 22.729],
+  distance: "52,5 km",
+  denivele: "1370 m",
+  hotel: "Apollo Guest House",
+  openrunner: "24161381"
+},
+{
+  nom: "J11 – Astros",
+  coords: [37.414, 22.765],
+  distance: "77,4 km",
+  denivele: "756 m",
+  hotel: "Astros Beach Boutique",
+  openrunner: "24161419"
+},
+{
+  nom: "J12 – Nauplie",
+  coords: [37.568, 22.806],
+  distance: "33,2 km",
+  denivele: "207 m",
+  hotel: "Ippoliti",
+  openrunner: "24161429"
+},
+{
+  nom: "J13 – Corinthe",
+  coords: [37.938, 22.932],
+  distance: "52,0 km",
+  denivele: "695 m",
+  hotel: "Avenue Blue",
+  openrunner: "24161474"
+},
+{
+  nom: "J14 – Diakopto",
+  coords: [38.192, 22.201],
+  distance: "80,3 km",
+  denivele: "276 m",
+  hotel: "Porto & Mare",
+  openrunner: "24161507"
+},
+{
+  nom: "J15 – Patras",
+  coords: [38.246, 21.734],
+  distance: "59,7 km",
+  denivele: "347 m",
+  hotel: "Arrivée finale",
+  openrunner: "24161523"
 }
 ];
 etapes.forEach(e => {
