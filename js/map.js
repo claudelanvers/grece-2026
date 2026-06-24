@@ -30,7 +30,7 @@ new L.GPX(
 'gpx/a_j1_vers_margariti-24158784-1780826430-638.gpx',
 {
   async: true,
-  marker_options: null
+ 
 }
 ).on('loaded', function(e) {
   e.target.getLayers().forEach(function(layer) {
