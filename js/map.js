@@ -49,6 +49,12 @@ new L.GPX(
 'gpx/b_j2_vers_preveza-24158803-1780826447-167.gpx',
 {
   async: true,
+  marker_options: {
+    startIconUrl: null,
+    endIconUrl: null,
+    shadowUrl: null,
+    wptIconUrls: false
+  },
   polyline_options: {
     color: 'red',
     weight: 5
