@@ -5,7 +5,7 @@ L.tileLayer(
 {
 attribution: '© OpenStreetMap'
 }
-).addTo(map);
+).addTo(map);new L GPX
 
 const igoumenitsa = L.marker([39.503, 20.263])
 .addTo(map)
