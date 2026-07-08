@@ -24,55 +24,7 @@ const satellite = L.tileLayer(
         attribution: 'Tiles © Esri'
     }
 );
-// =========================
-// Icônes des points d'intérêt
-// =========================
 
-const icons = {
-
-    antiquite: L.icon({
-        iconUrl: 'assets/poi/antiquite.svg',
-        iconSize: [32, 32],
-        iconAnchor: [16, 32],
-        popupAnchor: [0, -28]
-    }),
-
-    nature: L.icon({
-        iconUrl: 'assets/poi/nature.svg',
-        iconSize: [32, 32],
-        iconAnchor: [16, 32],
-        popupAnchor: [0, -28]
-    }),
-
-    chateau: L.icon({
-        iconUrl: 'assets/poi/chateau.svg',
-        iconSize: [32, 32],
-        iconAnchor: [16, 32],
-        popupAnchor: [0, -28]
-    }),
-
-    ville: L.icon({
-        iconUrl: 'assets/poi/ville.svg',
-        iconSize: [32, 32],
-        iconAnchor: [16, 32],
-        popupAnchor: [0, -28]
-    }),
-
-    pont: L.icon({
-        iconUrl: 'assets/poi/pont.svg',
-        iconSize: [32, 32],
-        iconAnchor: [16, 32],
-        popupAnchor: [0, -28]
-    }),
-
-    grotte: L.icon({
-        iconUrl: 'assets/poi/grotte.svg',
-        iconSize: [32, 32],
-        iconAnchor: [16, 32],
-        popupAnchor: [0, -28]
-    })
-
-};
 // Fond affiché au démarrage
 osm.addTo(map);
 // Couche des points d'intérêt
@@ -435,21 +387,233 @@ L.marker([38.192, 22.201])
 L.marker([38.246, 21.734])
 .addTo(map)
 .bindPopup('<b>Arrivée finale</b><br>Patras');
+L.circleMarker([37.0272, 21.695], {
+  radius: 10,
+  color: 'lime',
+  fillColor: 'lime',
+  fillOpacity: 0.8
+})
+.addTo(map)
 
+.bindPopup(`
+  <b>🏛️ Palais de Nestor</b><br>
+  Site mycénien près de Pylos.<br>
+  <a href="https://fr.wikipedia.org/wiki/Palais_de_Nestor"
+     target="_blank">
+     Wikipédia
+  </a>
+`);
+L.circleMarker([37.7308, 22.7547], {
+  radius: 10,
+  color: 'lime',
+  fillColor: 'lime',
+  fillOpacity: 0.8
+})
+.addTo(map)
+.bindPopup(`
+  <b>🏛️ Mycènes</b><br>
+  Site archéologique majeur de l'Argolide.<br>
+  <a href="https://fr.wikipedia.org/wiki/Myc%C3%A8nes"
+     target="_blank">
+     📖 Wikipédia
+  </a>
+`);
+L.circleMarker([37.5960, 23.0738], {
+  radius: 11,
+  color: 'yellow',
+  fillColor: 'yellow',
+  fillOpacity: 0.8
+})
+.addTo(map)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.bindPopup(`
+  <b>🏛️ Épidaure</b><br>
+  Théâtre antique et sanctuaire d'Asclépios.<br>
+  <a href="https://fr.wikipedia.org/wiki/%C3%89pidaure"
+     target="_blank">
+     📖 Wikipédia
+  </a>
+`);
+L.circleMarker([37.9338, 22.9958], {
+  radius: 10,
+  color: 'green',
+  fillColor: 'green',
+  fillOpacity: 0.8
+})
+.addTo(map)
+.bindPopup(`
+  <b>🏛️ Canal de Corinthe</b><br>
+  Canal reliant le golfe de Corinthe à la mer Égée.<br>
+  <a href="https://fr.wikipedia.org/wiki/Canal_de_Corinthe"
+     target="_blank">
+     📖 Wikipédia
+  </a>
+`);
+L.circleMarker([38.2676, 20.6255], {
+  radius: 10,
+  color: 'cyan',
+  fillColor: 'cyan',
+  fillOpacity: 0.8
+})
+.addTo(map)
+.bindPopup(`
+  <b>🌊 Grotte de Melissani</b><br>
+  Lac souterrain spectaculaire sur l'île de Céphalonie.<br>
+  <a href="https://fr.wikipedia.org/wiki/Grotte_de_Melissani"
+     target="_blank">
+     📖 Wikipédia
+  </a>
+`);
+L.circleMarker([36.6705, 22.3725], {
+  radius: 10,
+  color: 'cyan',
+  fillColor: 'cyan',
+  fillOpacity: 0.8
+})
+.addTo(map)
+.bindPopup(`
+  <b>🌊 Grottes de Diros</b><br>
+  Réseau de grottes marines parmi les plus célèbres de Grèce.<br>
+  <a href="https://fr.wikipedia.org/wiki/Grottes_de_Diros"
+     target="_blank">
+     📖 Wikipédia
+  </a>
+`);
+L.circleMarker([37.9715, 23.7267], {
+  radius: 11,
+  color: 'green',
+  fillColor: 'green',
+  fillOpacity: 0.8
+})
+.addTo(map)
+.bindPopup(`
+  <b>🏛️ Acropole d'Athènes</b><br>
+  Le monument emblématique de la Grèce antique.<br>
+  <a href="https://fr.wikipedia.org/wiki/Acropole_d%27Ath%C3%A8nes"
+     target="_blank">
+     📖 Wikipédia
+  </a>
+`);
+L.circleMarker([37.567, 22.801], {
+  radius: 8,
+  color: 'orange',
+  fillColor: 'orange',
+  fillOpacity: 0.8
+})
+.addTo(map)
+.bindPopup(`
+  <b>🏙️ Nauplie</b><br>
+  Première capitale de la Grèce moderne.<br>
+  <a href="https://fr.wikipedia.org/wiki/Nauplie"
+     target="_blank">
+     📖 Wikipédia
+  </a>
+`);
+L.circleMarker([36.758, 22.565], {
+  radius: 8,
+  color: 'orange',
+  fillColor: 'orange',
+  fillOpacity: 0.8
+})
+.addTo(map)
+.bindPopup(`
+  <b>🏙️ Gythio</b><br>
+  Ancien port de Sparte et charmante ville du Magne.<br>
+  <a href="https://fr.wikipedia.org/wiki/Gythio"
+     target="_blank">
+     📖 Wikipédia
+  </a>
+`);
+L.circleMarker([37.039, 22.114], {
+  radius: 8,
+  color: 'orange',
+  fillColor: 'orange',
+  fillOpacity: 0.8
+})
+.addTo(map)
+.bindPopup(`
+  <b>🏙️ Kalamata</b><br>
+  Capitale de la Messénie, célèbre pour ses olives.<br>
+  <a href="https://fr.wikipedia.org/wiki/Kalamata"
+     target="_blank">
+     📖 Wikipédia
+  </a>
+`);
+L.circleMarker([36.960, 21.655], {
+  radius: 10,
+  color: 'cyan',
+  fillColor: 'cyan',
+  fillOpacity: 0.8
+})
+.addTo(map)
+.bindPopup(`
+  <b>🌊 Lagune de Gialova</b><br>
+  Réserve naturelle et zone humide remarquable de Messénie.<br>
+  <a href="https://fr.wikipedia.org/wiki/Lagune_de_Gialova"
+     target="_blank">
+     📖 Wikipédia
+  </a>
+`);
+L.circleMarker([37.6383, 21.6300], {
+  radius: 10,
+  color: 'green',
+  fillColor: 'green',
+  fillOpacity: 0.8
+})
+.addTo(map)
+.bindPopup(`
+  <b>🏛️ Olympie</b><br>
+  Berceau des Jeux olympiques antiques.<br>
+  <a href="https://fr.wikipedia.org/wiki/Olympie"
+     target="_blank">
+     📖 Wikipédia
+  </a>
+`);
+L.circleMarker([37.0736, 22.3695], {
+  radius: 10,
+  color: 'green',
+  fillColor: 'green',
+  fillOpacity: 0.8
+})
+.addTo(map)
+.bindPopup(`
+  <b>🏛️ Mystra</b><br>
+  Ancienne cité byzantine classée au patrimoine mondial.<br>
+  <a href="https://fr.wikipedia.org/wiki/Mystra"
+     target="_blank">
+     📖 Wikipédia
+  </a>
+`);
+L.circleMarker([36.6878, 23.0565], {
+  radius: 10,
+  color: 'orange',
+  fillColor: 'orange',
+  fillOpacity: 0.8
+})
+.addTo(map)
+.bindPopup(`
+  <b>🏰 Monemvasia</b><br>
+  Cité médiévale fortifiée sur un îlot rocheux.<br>
+  <a href="https://fr.wikipedia.org/wiki/Monemvasia"
+     target="_blank">
+     📖 Wikipédia
+  </a>
+`);
+L.circleMarker([36.9528, 21.6578], {
+  radius: 10,
+  color: 'cyan',
+  fillColor: 'cyan',
+  fillOpacity: 0.8
+})
+.addTo(map)
+.bindPopup(`
+  <b>🌊 Plage de Voidokilia</b><br>
+  L'une des plus belles plages de Grèce.<br>
+  <a href="https://fr.wikipedia.org/wiki/Voidokilia"
+     target="_blank">
+     📖 Wikipédia
+  </a>
+`);
 const legend = L.control({position: 'bottomright'});
 
 legend.onAdd = function () {
@@ -549,7 +713,7 @@ const etapes = [
   coords: [37.089, 22.729],
   distance: "52,5 km",
   denivele: "1370 m",
-  hotel: "Xenonas Ouranogeiton",
+  hotel: "Apollo Guest House",
   openrunner: "24161381"
 },
 {
@@ -607,9 +771,8 @@ etapes.forEach(function(e) {
     );
 
 });
-
 // ===========================
-// POINTS D'INTÉRÊT TOURISTIQUES
+// POINTS D'INTERÊT TOURISTIQUES
 // ===========================
 
 function ajouterPOI(poi) {
@@ -619,45 +782,21 @@ function ajouterPOI(poi) {
         etoiles += "⭐";
     }
 
-    const popup = `
-        <div class="poi-popup">
-
-            <h3>${poi.nom}</h3>
-
-            <hr>
-
-            <p>${poi.description}</p>
-
-            <div class="etoiles">
-                ${etoiles}
-            </div>
-
-            <div class="duree">
-                ⏱️ Durée : ${poi.duree}
-            </div>
-
-            <div class="liens">
-    <a href="${poi.wiki}" target="_blank">📖 Wikipédia</a>
-    &nbsp;&nbsp;&nbsp;
-    <a href="${poi.maps}" target="_blank">🗺️ Google Maps</a>
-</div>
-    `;
-
-   let options = {};
-
-if (poi.categorie && icons[poi.categorie]) {
-    options.icon = icons[poi.categorie];
-}
-
-L.marker(poi.coords, options)
-    .addTo(poiLayer)
-    .bindPopup(popup);
+    L.marker(poi.coords)
+        .addTo(poiLayer)
+        .bindPopup(
+            "<b>" + poi.nom + "</b><br><br>" +
+            poi.description + "<br><br>" +
+            "⏱ " + poi.duree + "<br>" +
+            etoiles + "<br><br>" +
+            '<a href="' + poi.wiki + '" target="_blank">📖 Wikipédia</a><br>' +
+            '<a href="' + poi.maps + '" target="_blank">🗺 Google Maps</a>'
+        );
 
 }
 ajouterPOI({
 
     nom: "🏛️ Messène antique",
-    categorie: "antiquite",
 
     coords: [37.1778, 21.9325],
 
@@ -671,367 +810,5 @@ ajouterPOI({
     wiki: "https://fr.wikipedia.org/wiki/Mess%C3%A8ne",
 
     maps: "https://maps.google.com/?q=37.1778,21.9325"
-
-});
-ajouterPOI({
-
-    nom: "🏖️ Plage de Voidokilia",
-    categorie: "nature",
-
-    coords: [36.9629, 21.6576],
-
-    description:
-        "Une plage mythique en forme d'oméga, considérée comme l'une des plus belles de Grèce. Panorama exceptionnel sur la lagune de Gialova.",
-
-    duree: "30 min à 1 h",
-
-    etoiles: 5,
-
-    wiki: "https://fr.wikipedia.org/wiki/Voidokili%C3%A1",
-
-    maps: "https://maps.google.com/?q=36.9629,21.6576"
-
-});
-ajouterPOI({
-
-    nom: "🌉 Pont Rio-Antirrio",
-    categorie: "pont",
-
-    coords: [38.3156, 21.7804],
-
-    description:
-        "L'un des plus grands ponts haubanés du monde. Il relie le Péloponnèse à la Grèce continentale.",
-
-    duree: "15 à 30 min",
-
-    etoiles: 4,
-
-    wiki: "https://fr.wikipedia.org/wiki/Pont_R%C3%ADo-Ant%C3%ADrrio",
-
-    maps: "https://maps.google.com/?q=38.3156,21.7804"
-
-});
-ajouterPOI({
-
-    nom: "🦁 Mycènes",
-    categorie: "antiquite",
-    
-
-    coords: [37.7308, 22.7546],
-
-    description:
-        "Ancienne cité du roi Agamemnon, célèbre pour la Porte des Lions et les tombes royales. Classée au patrimoine mondial de l'UNESCO.",
-
-    duree: "2 à 3 h",
-
-    etoiles: 5,
-
-    wiki: "https://fr.wikipedia.org/wiki/Myc%C3%A8nes",
-
-    maps: "https://maps.google.com/?q=37.7308,22.7546"
-
-});
-ajouterPOI({
-
-    nom: "🎭 Théâtre d'Épidaure",
-    categorie: "antiquite",
-
-    coords: [37.5964, 23.0785],
-
-    description:
-        "Le théâtre antique le mieux conservé de Grèce, réputé pour son acoustique exceptionnelle. Site inscrit au patrimoine mondial de l'UNESCO.",
-
-    duree: "1 h 30 à 2 h",
-
-    etoiles: 5,
-
-    wiki: "https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_d%27%C3%89pidaure",
-
-    maps: "https://maps.google.com/?q=37.5964,23.0785"
-
-});
-ajouterPOI({
-
-    nom: "🚢 Canal de Corinthe",
-
-    coords: [37.9339, 22.9922],
-
-    description:
-        "Canal long de 6,3 km creusé dans la roche, reliant le golfe de Corinthe à la mer Égée. Impressionnant point de vue depuis le pont.",
-
-    duree: "20 à 30 min",
-
-    etoiles: 5,
-
-    wiki: "https://fr.wikipedia.org/wiki/Canal_de_Corinthe",
-
-    maps: "https://maps.google.com/?q=37.9339,22.9922"
-
-});
-ajouterPOI({
-
-    nom: "🏛️ Corinthe antique",
-    categorie: "antiquite",
-
-    coords: [37.9058, 22.8792],
-
-    description:
-        "Important site archéologique dominé par l'Acrocorinthe. On y découvre l'agora, le temple d'Apollon et les vestiges de la cité antique.",
-
-    duree: "2 à 3 h",
-
-    etoiles: 5,
-
-    wiki: "https://fr.wikipedia.org/wiki/Corinthe_antique",
-
-    maps: "https://maps.google.com/?q=37.9058,22.8792"
-
-});
-ajouterPOI({
-
-    nom: "🏛️ Palais de Nestor",
-    categorie: "antiquite",
-
-    coords: [36.9576, 21.6956],
-
-    description:
-        "Le plus beau palais mycénien de Grèce, attribué au légendaire roi Nestor. Fresques, salles du trône et tablettes en linéaire B.",
-
-    duree: "1 h à 1 h 30",
-
-    etoiles: 5,
-
-    wiki: "https://fr.wikipedia.org/wiki/Palais_de_Nestor",
-
-    maps: "https://maps.google.com/?q=36.9576,21.6956"
-
-});
-ajouterPOI({
-
-    nom: "🚂 Gorges du Vouraïkos",
-    categorie: "nature",
-
-    coords: [38.0308, 22.1932],
-
-    description:
-        "Magnifiques gorges parcourues par le célèbre train à crémaillère reliant Diakopto à Kalávryta.",
-
-    duree: "2 à 4 h",
-
-    etoiles: 5,
-
-    wiki: "https://fr.wikipedia.org/wiki/Voura%C3%AFkos",
-
-    maps: "https://maps.google.com/?q=38.0308,22.1932"
-
-});
-ajouterPOI({
-
-    nom: "⚓ Pylos",
-    categorie: "ville",
-
-    coords: [36.9139, 21.6969],
-
-    description:
-        "Charmante ville portuaire dominée par le château de Niokastro et ouverte sur la baie de Navarin.",
-
-    duree: "1 à 2 h",
-
-    etoiles: 4,
-
-    wiki: "https://fr.wikipedia.org/wiki/Pylos",
-
-    maps: "https://maps.google.com/?q=36.9139,21.6969"
-
-});
-ajouterPOI({
-
-    nom: "🦩 Lagune de Gialova",
-    categorie: "nature",
-
-    coords: [36.9589, 21.6905],
-
-    description:
-        "Zone humide protégée, refuge de nombreuses espèces d'oiseaux migrateurs, au bord de la baie de Navarin.",
-
-    duree: "30 min à 1 h",
-
-    etoiles: 4,
-
-    wiki: "https://fr.wikipedia.org/wiki/Lagune_de_Gialova",
-
-    maps: "https://maps.google.com/?q=36.9589,21.6905"
-
-});
-ajouterPOI({
-
-    nom: "🏘️ Nauplie",
-    categorie: "ville",
-
-    coords: [37.5673, 22.8016],
-
-    description:
-        "Première capitale de la Grèce moderne. Jolie vieille ville vénitienne, ruelles animées et forteresse de Palamède.",
-
-    duree: "2 à 4 h",
-
-    etoiles: 5,
-
-    wiki: "https://fr.wikipedia.org/wiki/Nauplie",
-
-    maps: "https://maps.google.com/?q=37.5673,22.8016"
-
-});
-ajouterPOI({
-
-    nom: "🏛️ Athènes",
-    categorie: "antiquite",
-
-    coords: [37.9715, 23.7267],
-
-    description:
-        "Capitale de la Grèce et berceau de la démocratie. À ne pas manquer : l'Acropole, le Parthénon et le quartier de Pláka.",
-
-    duree: "1 journée",
-
-    etoiles: 5,
-
-    wiki: "https://fr.wikipedia.org/wiki/Ath%C3%A8nes",
-
-    maps: "https://maps.google.com/?q=37.9715,23.7267"
-
-});
-ajouterPOI({
-
-    nom: "🏰 Mistra",
-    categorie: "chateau",
-
-    coords: [37.0737, 22.3663],
-
-    description:
-        "Magnifique cité byzantine classée au patrimoine mondial de l'UNESCO, avec palais, monastères et églises dominant la vallée de Sparte.",
-
-    duree: "2 à 3 h",
-
-    etoiles: 5,
-
-    wiki: "https://fr.wikipedia.org/wiki/Mistra",
-
-    maps: "https://maps.google.com/?q=37.0737,22.3663"
-
-});
-ajouterPOI({
-
-    nom: "🛶 Grottes de Diros",
-    categorie: "grotte",
-
-    coords: [36.6708, 22.4774],
-
-    description:
-        "Spectaculaires grottes partiellement inondées, que l'on visite en barque. L'un des plus beaux sites naturels du Péloponnèse.",
-
-    duree: "1 h à 1 h 30",
-
-    etoiles: 5,
-
-    wiki: "https://fr.wikipedia.org/wiki/Grottes_de_Diros",
-
-    maps: "https://maps.google.com/?q=36.6708,22.4774"
-
-});
-ajouterPOI({
-
-    nom: "🛶 Grotte de Melissani",
-    categorie: "grotte",
-
-    coords: [38.2570, 20.6236],
-
-    description:
-        "Lac souterrain aux eaux turquoise, visité en barque. L'un des sites naturels les plus spectaculaires de Céphalonie.",
-
-    duree: "30 à 45 min",
-
-    etoiles: 5,
-
-    wiki: "https://fr.wikipedia.org/wiki/Grotte_de_Meliss%C3%A1ni",
-
-    maps: "https://maps.google.com/?q=38.2570,20.6236"
-
-});
-ajouterPOI({
-
-    nom: "⚓ Gythio",
-    categorie: "ville",
-
-    coords: [36.7569, 22.5648],
-
-    description:
-        "Charmant port de pêche de Laconie, ancienne base navale de Sparte. Front de mer animé, maisons néoclassiques et îlot de Cranaé.",
-
-    duree: "1 à 2 h",
-
-    etoiles: 4,
-
-    wiki: "https://fr.wikipedia.org/wiki/Gythio",
-
-    maps: "https://maps.google.com/?q=36.7569,22.5648"
-
-});
-ajouterPOI({
-
-    nom: "🏰 Monemvasia",
-    categorie: "chateau",
-
-    coords: [36.6877, 23.0565],
-
-    description:
-        "Spectaculaire cité médiévale fortifiée bâtie sur un immense rocher relié au continent par une chaussée. L'un des plus beaux villages historiques de Grèce.",
-
-    duree: "2 à 4 h",
-
-    etoiles: 5,
-
-    wiki: "https://fr.wikipedia.org/wiki/Monemvasia",
-
-    maps: "https://maps.google.com/?q=36.6877,23.0565"
-
-});
-ajouterPOI({
-
-    nom: "🌴 Kalamata",
-    categorie: "ville",
-
-    coords: [37.0389, 22.1142],
-
-    description:
-        "Capitale de la Messénie, réputée pour ses olives, son agréable front de mer, son centre historique et le château médiéval qui domine la ville.",
-
-    duree: "2 à 3 h",
-
-    etoiles: 4,
-
-    wiki: "https://fr.wikipedia.org/wiki/Kalamata",
-
-    maps: "https://maps.google.com/?q=37.0389,22.1142"
-
-});
-ajouterPOI({
-
-    nom: "🏛️ Olympie",
-
-categorie: "antiquite",
-
-    coords: [37.6379, 21.6300],
-
-    description:
-        "Berceau des Jeux olympiques antiques. Le vaste site archéologique comprend le temple de Zeus, le stade antique et un remarquable musée.",
-
-    duree: "3 à 4 h",
-
-    etoiles: 5,
-
-    wiki: "https://fr.wikipedia.org/wiki/Olympie",
-
-    maps: "https://maps.google.com/?q=37.6379,21.6300"
 
 });

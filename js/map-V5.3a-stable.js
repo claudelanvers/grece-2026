@@ -24,55 +24,7 @@ const satellite = L.tileLayer(
         attribution: 'Tiles © Esri'
     }
 );
-// =========================
-// Icônes des points d'intérêt
-// =========================
 
-const icons = {
-
-    antiquite: L.icon({
-        iconUrl: 'assets/poi/antiquite.svg',
-        iconSize: [32, 32],
-        iconAnchor: [16, 32],
-        popupAnchor: [0, -28]
-    }),
-
-    nature: L.icon({
-        iconUrl: 'assets/poi/nature.svg',
-        iconSize: [32, 32],
-        iconAnchor: [16, 32],
-        popupAnchor: [0, -28]
-    }),
-
-    chateau: L.icon({
-        iconUrl: 'assets/poi/chateau.svg',
-        iconSize: [32, 32],
-        iconAnchor: [16, 32],
-        popupAnchor: [0, -28]
-    }),
-
-    ville: L.icon({
-        iconUrl: 'assets/poi/ville.svg',
-        iconSize: [32, 32],
-        iconAnchor: [16, 32],
-        popupAnchor: [0, -28]
-    }),
-
-    pont: L.icon({
-        iconUrl: 'assets/poi/pont.svg',
-        iconSize: [32, 32],
-        iconAnchor: [16, 32],
-        popupAnchor: [0, -28]
-    }),
-
-    grotte: L.icon({
-        iconUrl: 'assets/poi/grotte.svg',
-        iconSize: [32, 32],
-        iconAnchor: [16, 32],
-        popupAnchor: [0, -28]
-    })
-
-};
 // Fond affiché au démarrage
 osm.addTo(map);
 // Couche des points d'intérêt
@@ -643,21 +595,14 @@ function ajouterPOI(poi) {
 </div>
     `;
 
-   let options = {};
-
-if (poi.categorie && icons[poi.categorie]) {
-    options.icon = icons[poi.categorie];
-}
-
-L.marker(poi.coords, options)
-    .addTo(poiLayer)
-    .bindPopup(popup);
+    L.marker(poi.coords)
+        .addTo(poiLayer)
+        .bindPopup(popup);
 
 }
 ajouterPOI({
 
     nom: "🏛️ Messène antique",
-    categorie: "antiquite",
 
     coords: [37.1778, 21.9325],
 
@@ -676,7 +621,6 @@ ajouterPOI({
 ajouterPOI({
 
     nom: "🏖️ Plage de Voidokilia",
-    categorie: "nature",
 
     coords: [36.9629, 21.6576],
 
@@ -695,7 +639,6 @@ ajouterPOI({
 ajouterPOI({
 
     nom: "🌉 Pont Rio-Antirrio",
-    categorie: "pont",
 
     coords: [38.3156, 21.7804],
 
@@ -714,8 +657,6 @@ ajouterPOI({
 ajouterPOI({
 
     nom: "🦁 Mycènes",
-    categorie: "antiquite",
-    
 
     coords: [37.7308, 22.7546],
 
@@ -734,7 +675,6 @@ ajouterPOI({
 ajouterPOI({
 
     nom: "🎭 Théâtre d'Épidaure",
-    categorie: "antiquite",
 
     coords: [37.5964, 23.0785],
 
@@ -771,7 +711,6 @@ ajouterPOI({
 ajouterPOI({
 
     nom: "🏛️ Corinthe antique",
-    categorie: "antiquite",
 
     coords: [37.9058, 22.8792],
 
@@ -790,7 +729,6 @@ ajouterPOI({
 ajouterPOI({
 
     nom: "🏛️ Palais de Nestor",
-    categorie: "antiquite",
 
     coords: [36.9576, 21.6956],
 
@@ -809,7 +747,6 @@ ajouterPOI({
 ajouterPOI({
 
     nom: "🚂 Gorges du Vouraïkos",
-    categorie: "nature",
 
     coords: [38.0308, 22.1932],
 
@@ -828,7 +765,6 @@ ajouterPOI({
 ajouterPOI({
 
     nom: "⚓ Pylos",
-    categorie: "ville",
 
     coords: [36.9139, 21.6969],
 
@@ -847,7 +783,6 @@ ajouterPOI({
 ajouterPOI({
 
     nom: "🦩 Lagune de Gialova",
-    categorie: "nature",
 
     coords: [36.9589, 21.6905],
 
@@ -866,7 +801,6 @@ ajouterPOI({
 ajouterPOI({
 
     nom: "🏘️ Nauplie",
-    categorie: "ville",
 
     coords: [37.5673, 22.8016],
 
@@ -885,7 +819,6 @@ ajouterPOI({
 ajouterPOI({
 
     nom: "🏛️ Athènes",
-    categorie: "antiquite",
 
     coords: [37.9715, 23.7267],
 
@@ -904,7 +837,6 @@ ajouterPOI({
 ajouterPOI({
 
     nom: "🏰 Mistra",
-    categorie: "chateau",
 
     coords: [37.0737, 22.3663],
 
@@ -923,7 +855,6 @@ ajouterPOI({
 ajouterPOI({
 
     nom: "🛶 Grottes de Diros",
-    categorie: "grotte",
 
     coords: [36.6708, 22.4774],
 
@@ -942,7 +873,6 @@ ajouterPOI({
 ajouterPOI({
 
     nom: "🛶 Grotte de Melissani",
-    categorie: "grotte",
 
     coords: [38.2570, 20.6236],
 
@@ -961,7 +891,6 @@ ajouterPOI({
 ajouterPOI({
 
     nom: "⚓ Gythio",
-    categorie: "ville",
 
     coords: [36.7569, 22.5648],
 
@@ -980,7 +909,6 @@ ajouterPOI({
 ajouterPOI({
 
     nom: "🏰 Monemvasia",
-    categorie: "chateau",
 
     coords: [36.6877, 23.0565],
 
@@ -999,7 +927,6 @@ ajouterPOI({
 ajouterPOI({
 
     nom: "🌴 Kalamata",
-    categorie: "ville",
 
     coords: [37.0389, 22.1142],
 
@@ -1018,8 +945,7 @@ ajouterPOI({
 ajouterPOI({
 
     nom: "🏛️ Olympie",
-
-categorie: "antiquite",
+icon: iconAntique,
 
     coords: [37.6379, 21.6300],
 

@@ -1,15 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+/* ===========================
+   POPUPS DES POI
+   =========================== */
+
+.poi-popup {
+    min-width: 240px;
+    line-height: 1.4;
+}
+
+.poi-popup h3 {
+    margin: 0 0 6px 0;
+    font-size: 18px;
+    color: #1f4e79;
+}
+
+.poi-popup hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 8px 0;
+}
+
+.poi-popup p {
+    margin: 0;
+}
+
+.poi-popup .etoiles {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.poi-popup .duree {
+    margin-top: 6px;
+    font-weight: bold;
+}
+
+.poi-popup .liens {
+    margin-top: 12px;
+}
+
+.poi-popup .liens a {
+    text-decoration: none;
+}
+
+.poi-popup .liens a:hover {
+    text-decoration: underline;
+}
+
+</style>
+
 <title>Carte Grèce 2026</title>
+
 </head>
 <body>
 
 <h1>Carte Grèce 2026</h1>
 
-<div id="map" style="height:600px;"></div>
+<div id="map" style="height:600px; width:100%;"></div>
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.5/leaflet.awesome-markers.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/leaflet-gpx@2.1.2/gpx.min.js"></script>
 
 <script src="js/map.js"></script>
