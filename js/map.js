@@ -481,7 +481,12 @@ Grèce 2026
 };
 
 legend.addTo(map);
-
+L.control.scale({
+    position: 'bottomleft',
+    metric: true,
+    imperial: false,
+    maxWidth: 120
+}).addTo(map);
 
 
 const etapes = [
@@ -635,17 +640,20 @@ function ajouterPOI(poi) {
     const popup = `
         <div class="poi-popup">
 
-            <h3>${poi.nom}</h3>
+            <h3 style="margin:0;color:#0b5fa5;font-size:18px;">
+${poi.nom}
+<<hr style="border:none;border-top:1px solid #ddd;margin:8px 0;">
 
-            <hr>
-
+<p style="margin:8px 0;line-height:1.4;">
+${poi.description}
+</p>
             <p>${poi.description}</p>
 
-            <div class="etoiles">
+            <div style="font-size:18px;margin:8px 0;">
                 ${etoiles}
             </div>
 
-            <div class="duree">
+            <div style="background:#eef6ff;padding:6px;border-radius:6px;margin:8px 0;">
                 ⏱️ Durée : ${poi.duree}
             </div>
 
