@@ -430,52 +430,21 @@ const legend = L.control({position: 'bottomright'});
 
 legend.onAdd = function () {
   const div = L.DomUtil.create('div', 'info legend');
-    div.style.background = 'rgba(255,255,255,0.95)';
-  div.style.padding = '12px';
-  div.style.border = '1px solid #999';
-  div.style.borderRadius = '10px';
-  div.style.boxShadow = '0 2px 8px rgba(0,0,0,0.30)';
-  div.style.lineHeight = '1.6';
-  div.style.fontSize = '14px';
+  div.style.background = 'white';
+  div.style.padding = '10px';
+  div.style.border = '2px solid #ccc';
+  div.style.borderRadius = '5px';
 
  div.innerHTML = `
-<div style="text-align:center;font-size:16px;font-weight:bold;margin-bottom:10px;">
-Grèce 2026
-</div>
+<b>Grèce 2026</b><br><br>
 
-<div style="display:flex;align-items:center;margin:6px 0;">
-🚴 <span style="margin-left:8px;">Étapes</span>
-</div>
-
-<div style="display:flex;align-items:center;margin:6px 0;">
-<img src="assets/poi/antiquite.svg" width="22" height="22">
-<span style="margin-left:8px;">Antiquité</span>
-</div>
-
-<div style="display:flex;align-items:center;margin:6px 0;">
-<img src="assets/poi/nature.svg" width="22" height="22">
-<span style="margin-left:8px;">Nature</span>
-</div>
-
-<div style="display:flex;align-items:center;margin:6px 0;">
-<img src="assets/poi/grotte.svg" width="22" height="22">
-<span style="margin-left:8px;">Grotte</span>
-</div>
-
-<div style="display:flex;align-items:center;margin:6px 0;">
-<img src="assets/poi/ville.svg" width="22" height="22">
-<span style="margin-left:8px;">Ville</span>
-</div>
-
-<div style="display:flex;align-items:center;margin:6px 0;">
-<img src="assets/poi/chateau.svg" width="22" height="22">
-<span style="margin-left:8px;">Château</span>
-</div>
-
-<div style="display:flex;align-items:center;margin:6px 0;">
-<img src="assets/poi/pont.svg" width="22" height="22">
-<span style="margin-left:8px;">Pont remarquable</span>
-</div>
+🚴 Étapes<br>
+🏛️ Antiquité<br>
+🌿 Nature<br>
+🕳️ Grotte<br>
+🏙️ Ville<br>
+🏰 Château<br>
+🌉 Pont
 `;
   return div;
 };
