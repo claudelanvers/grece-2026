@@ -363,34 +363,10 @@ new L.GPX(
   }
 }
 ).addTo(map);
-L.circleMarker([39.3858, 20.4387], {
-  radius: 12,
-  color: 'orange'
-})
-.addTo(map)
-  
-.bindPopup('<b>Palataki</b><br>Margariti');
 
-L.circleMarker([38.9597, 20.7517], {
-  radius: 12,
-  color: 'orange'
-})
-.addTo(map)
-  
-.bindPopup('<b>Maissance</b><br>Préveza');
+ 
 
-L.circleMarker([38.6298, 20.6068], {
-  radius: 12,
-  color: 'orange'
-})
-.addTo(map)
-.bindPopup('<b>Elisso</b><br>Vassiliki');
-L.circleMarker([38.151, 20.772], {
-  radius: 12,
-  color: 'orange'
-})
-.addTo(map)
-.bindPopup('<b>Oceanis</b><br>Poros');
+
 
 L.marker([37.483, 21.650])
 .addTo(map)
@@ -459,22 +435,23 @@ legend.onAdd = function () {
   div.style.border = '2px solid #ccc';
   div.style.borderRadius = '5px';
 
-  div.innerHTML = `
+ div.innerHTML = `
     <h4>Grèce 2026</h4>
     🚴 Étapes GPX<br>
-    🏨 Hôtels<br>
     🏛️ Sites historiques<br>
     🌊 Sites naturels
-  `;
-
+`;
   return div;
 };
 
 legend.addTo(map);
+
+
+
 const etapes = [
 {
   nom: "J1 – Margariti",
-  coords: [39.3858, 20.4387],
+  coords: [39.3582, 20.4384],
   distance: "27,8 km",
   denivele: "484 m",
   hotel: "Palataki",
