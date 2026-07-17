@@ -77,6 +77,7 @@ const icons = {
 osm.addTo(map);
 // Couche des points d'intérêt
 const poiLayer = L.layerGroup().addTo(map);
+const gpxGroup = L.featureGroup().addTo(map);
 // Sélecteur de fonds
 const overlays = {
     "📍 Points d'intérêt": poiLayer
@@ -127,6 +128,11 @@ L.control.locate({
         title: "Ma position"
     }
 }).addTo(map);
+L.easyButton('fa-home', function () {
+    map.fitBounds(gpxGroup.getBounds(), {
+        padding: [20, 20]
+    });
+}, 'Afficher tout le parcours').addTo(map);
 new L.GPX(
 'gpx/a_j1_vers_margariti-24158784-1780826430-638.gpx',
 {
@@ -145,7 +151,7 @@ new L.GPX(
       map.removeLayer(layer);
     }
   });
-}).addTo(map);
+}).addTo(gpxGroup);
 new L.GPX(
 'gpx/b_j2_vers_preveza-24158803-1780826447-167.gpx',
 {
@@ -161,7 +167,7 @@ new L.GPX(
     weight: 6
   }
 }
-).addTo(map);
+).addTo(gpxGroup);
 new L.GPX(
 'gpx/c_j3_vers_vassiliki-24158846-1780826452-622.gpx',
 {
@@ -183,7 +189,7 @@ new L.GPX(
       map.removeLayer(layer);
     }
   });
-}).addTo(map);
+}).addTo(gpxGroup);
 new L.GPX(
 'gpx/d_j4_vers_poros-24212308-1780826457-677.gpx',
 {
@@ -199,7 +205,7 @@ new L.GPX(
     weight: 5
   }
 }
-).addTo(map);
+).addTo(gpxGroup);
 
 new L.GPX(
 'gpx/e_j5_vers_zacharo-24158926-1780826461-994.gpx',
@@ -216,7 +222,7 @@ new L.GPX(
     weight: 5
   }
 }
-).addTo(map);
+).addTo(gpxGroup);
 
 new L.GPX(
 'gpx/f_j6_vers_pylos-24158965-1780826466-970.gpx',
@@ -233,7 +239,7 @@ new L.GPX(
     weight: 5
   }
 }
-).addTo(map);
+).addTo(gpxGroup);
 new L.GPX(
 'gpx/g_j7_vers_kalamata-24161278-1780826472-652.gpx',
 {
@@ -249,7 +255,7 @@ new L.GPX(
     weight: 5
   }
 }
-).addTo(map);
+).addTo(gpxGroup);
 new L.GPX(
 'gpx/h_j8_vers_oitolou-24161332-1780826476-761.gpx',
 {
@@ -265,7 +271,7 @@ new L.GPX(
     weight: 5
   }
 }
-).addTo(map);
+).addTo(gpxGroup);
 new L.GPX(
 'gpx/i_j9_vers_gythio-24161353-1780826480-121.gpx',
 {
@@ -281,7 +287,7 @@ new L.GPX(
     weight: 5
   }
 }
-).addTo(map);
+).addTo(gpxGroup);
 new L.GPX(
 'gpx/j_j10_vers_kosmas-24161381-1780826485-761.gpx',
 {
@@ -297,7 +303,7 @@ new L.GPX(
     weight: 5
   }
 }
-).addTo(map);
+).addTo(gpxGroup);
 new L.GPX(
 'gpx/k_j11_vers_astros-24161419-1780826489-993.gpx',
 {
@@ -313,7 +319,7 @@ new L.GPX(
     weight: 5
   }
 }
-).addTo(map);
+).addTo(gpxGroup);
 new L.GPX(
 'gpx/l_j12_vers_nauplie-24161429-1780826495-955.gpx',
 {
@@ -329,7 +335,7 @@ new L.GPX(
     weight: 5
   }
 }
-).addTo(map);
+).addTo(gpxGroup);
 new L.GPX(
 'gpx/m_j13_vers_corinthe-24161474-1780826499-584.gpx',
 {
@@ -345,7 +351,7 @@ new L.GPX(
     weight: 5
   }
 }
-).addTo(map);
+).addTo(gpxGroup);
 new L.GPX(
 'gpx/n_j14_vers_diakopto-24161507-1780826504-461.gpx',
 {
@@ -361,7 +367,7 @@ new L.GPX(
     weight: 5
   }
 }
-).addTo(map);
+).addTo(gpxGroup);
 new L.GPX(
 'gpx/o_j15_vers_patras-24161523-1780826509-105.gpx',
 {
@@ -377,7 +383,7 @@ new L.GPX(
     weight: 5
   }
 }
-).addTo(map);
+).addTo(gpxGroup);
 
  
 
