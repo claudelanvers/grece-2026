@@ -82,14 +82,95 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 .easy-button-button {
     border-radius: 0 !important;
 }
+/* ===== Panneau de navigation ===== */
 
+.leaflet-top.leaflet-left .leaflet-control {
+    margin-bottom: 0 !important;
+}
+
+.leaflet-top.leaflet-left .leaflet-control:not(:first-child) {
+    margin-top: -1px !important;
+}
+
+.leaflet-top.leaflet-left .leaflet-bar,
+.leaflet-top.leaflet-left .easy-button-container {
+    border-radius: 0 !important;
+}
+
+.leaflet-top.leaflet-left .leaflet-control:first-child .leaflet-bar {
+    border-radius: 12px 12px 0 0 !important;
+}
+
+.leaflet-top.leaflet-left .leaflet-control:last-child .leaflet-bar,
+.leaflet-top.leaflet-left .leaflet-control:last-child .easy-button-container {
+    border-radius: 0 0 12px 12px !important;
+}
+/* Fusion visuelle des contrôles */
+
+.leaflet-top .leaflet-control {
+    margin-bottom: -1px !important;
+}
+
+.leaflet-bar {
+    box-shadow: none !important;
+}
+
+.leaflet-control {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25) !important;
+    border-radius: 12px !important;
+}
+/* ===========================
+   TITRE
+   =========================== */
+
+h1 {
+    margin: 8px 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #1f4e79;
+}
+/* ===========================
+   TITRE
+   =========================== */
+
+h1 {
+    margin: 8px 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #1f4e79;
+}
+/* ===========================
+   BANDEAU TITRE
+   =========================== */
+
+.titre-carte {
+    width: fit-content;
+    margin: 10px auto 8px auto;
+    padding: 8px 18px;
+
+    background: rgba(255,255,255,0.92);
+    border-radius: 14px;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.20);
+
+    font-family: Georgia, serif;
+    font-size: 26px;
+    font-weight: bold;
+    color: #1f4e79;
+
+    user-select: none;
+}
 </style>
 <title>Carte Grèce 2026</title>
 
 </head>
 <body>
 
-<h1>Carte Grèce 2026</h1>
+<div class="titre-carte">
+    🇬🇷 Grèce 2026
+</div>
 
 <div id="map" style="height:92vh; width:100%;"></div>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css">

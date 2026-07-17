@@ -118,7 +118,7 @@ setTimeout(() => {
 // =========================
 
 L.control.locate({
-   position: 'topleft',
+   position: 'bottomleft',
     flyTo: true,
     initialZoomLevel: 15,
     locateOptions: {
