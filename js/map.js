@@ -559,7 +559,15 @@ L.control.scale({
     maxWidth: 120
 }).addTo(map);
 
+const iconeEtape = L.icon({
+  iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
+  shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
 
+  iconSize: window.innerWidth < 700 ? [32, 52] : [25, 41],
+  iconAnchor: window.innerWidth < 700 ? [16, 52] : [12, 41],
+  popupAnchor: [1, -40],
+  shadowSize: [41, 41]
+});
  const etapes = [
 {
   nom: "J1 – Margariti",
@@ -685,7 +693,7 @@ L.control.scale({
  
 etapes.forEach(function(e) {
 
-  L.marker(e.coords)
+  L.marker(e.coords, { icon: iconeEtape })
     .addTo(map)
     .bindPopup(
 `<div style="
