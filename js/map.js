@@ -27,7 +27,7 @@ const satellite = L.tileLayer(
 // =========================
 // Icônes des points d'intérêt
 // =========================
-const taillePOI = 80;
+const taillePOI = window.innerWidth < 700 ? 38 : 32;
 const ancreX = taillePOI / 2;
 const ancreY = taillePOI;
 const icons = {
@@ -565,8 +565,8 @@ const iconeEtape = L.icon({
   iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
   shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
 
-  iconSize: window.innerWidth < 700 ? [32, 52] : [25, 41],
-  iconAnchor: window.innerWidth < 700 ? [16, 52] : [12, 41],
+  iconSize: window.innerWidth < 700 ? [38, 62] : [25, 41],
+iconAnchor: window.innerWidth < 700 ? [19, 62] : [12, 41],
   popupAnchor: [1, -40],
   shadowSize: [41, 41]
 });
