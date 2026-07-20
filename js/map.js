@@ -27,49 +27,51 @@ const satellite = L.tileLayer(
 // =========================
 // Icônes des points d'intérêt
 // =========================
-
+const taillePOI = window.innerWidth < 700 ? 42 : 32;
+const ancreX = taillePOI / 2;
+const ancreY = taillePOI;
 const icons = {
 
     antiquite: L.icon({
         iconUrl: 'assets/poi/antiquite.svg',
-        iconSize: [32, 32],
-        iconAnchor: [16, 32],
-        popupAnchor: [0, -28]
+        iconSize: [taillePOI, taillePOI],
+iconAnchor: [ancreX, ancreY],
+popupAnchor: [0, -36]
     }),
 
     nature: L.icon({
         iconUrl: 'assets/poi/nature.svg',
-        iconSize: [32, 32],
-        iconAnchor: [16, 32],
-        popupAnchor: [0, -28]
+        iconSize: [taillePOI, taillePOI],
+iconAnchor: [ancreX, ancreY],
+popupAnchor: [0, -36]
     }),
 
     chateau: L.icon({
         iconUrl: 'assets/poi/chateau.svg',
-        iconSize: [32, 32],
-        iconAnchor: [16, 32],
-        popupAnchor: [0, -28]
+        iconSize: [taillePOI, taillePOI],
+iconAnchor: [ancreX, ancreY],
+popupAnchor: [0, -36]
     }),
 
     ville: L.icon({
         iconUrl: 'assets/poi/ville.svg',
-        iconSize: [32, 32],
-        iconAnchor: [16, 32],
-        popupAnchor: [0, -28]
+        iconSize: [taillePOI, taillePOI],
+iconAnchor: [ancreX, ancreY],
+popupAnchor: [0, -36]
     }),
 
     pont: L.icon({
         iconUrl: 'assets/poi/pont.svg',
-        iconSize: [32, 32],
-        iconAnchor: [16, 32],
-        popupAnchor: [0, -28]
+        iconSize: [taillePOI, taillePOI],
+iconAnchor: [ancreX, ancreY],
+popupAnchor: [0, -36]
     }),
 
     grotte: L.icon({
         iconUrl: 'assets/poi/grotte.svg',
-        iconSize: [32, 32],
-        iconAnchor: [16, 32],
-        popupAnchor: [0, -28]
+        iconSize: [taillePOI, taillePOI],
+iconAnchor: [ancreX, ancreY],
+popupAnchor: [0, -36]
     })
 
 };
@@ -541,7 +543,7 @@ Grèce 2026
 <div style="display:flex;align-items:center;margin:6px 0;">
 <img src="assets/poi/chateau.svg" width="22" height="22">
 <span style="margin-left:8px;">Château</span>
-</div>
+</div>const iconeEtape
 
 <div style="display:flex;align-items:center;margin:6px 0;">
 <img src="assets/poi/pont.svg" width="22" height="22">
