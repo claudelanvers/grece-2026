@@ -1,9 +1,10 @@
 const map = L.map('map').setView([38.3, 22.0], 7);
 
+
 // --- Fonds de carte ---
 
 const osm = L.tileLayer(
-    'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+   'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
     {
         attribution: '&copy; OpenStreetMap contributors'
     }
@@ -553,7 +554,7 @@ Grèce 2026
   return div;
 };
 
-legend.addTo(map);
+// legend.addTo(map);
 L.control.scale({
     position: 'bottomleft',
     metric: true,
@@ -570,7 +571,7 @@ iconAnchor: window.innerWidth < 700 ? [21, 68] : [12, 41],
   popupAnchor: [1, -40],
   shadowSize: [41, 41]
 });
- const etapes = [
+  const etapes = [
 {
   nom: "J1 – Margariti",
   coords: [39.3582, 20.4384],
@@ -693,9 +694,18 @@ iconAnchor: window.innerWidth < 700 ? [21, 68] : [12, 41],
 }
 ];
  
-etapes.forEach(function(e) {
-
-  L.marker(e.coords, { icon: iconeEtape })
+etapes.forEach(function(e, i) {
+const iconeEtapeJour = L.divIcon({
+    className: '',
+    html: `
+      <div class="stage-icon">
+        J${i + 1}
+      </div>
+    `,
+    iconSize: [36, 36],
+    iconAnchor: [18, 18]
+});
+  L.marker(e.coords, { icon: iconeEtapeJour })
     .addTo(map)
     .bindPopup(
 `<div style="
