@@ -543,7 +543,7 @@ Grèce 2026
 <div style="display:flex;align-items:center;margin:6px 0;">
 <img src="assets/poi/chateau.svg" width="22" height="22">
 <span style="margin-left:8px;">Château</span>
-</div>const iconeEtape
+</div>
 
 <div style="display:flex;align-items:center;margin:6px 0;">
 <img src="assets/poi/pont.svg" width="22" height="22">
