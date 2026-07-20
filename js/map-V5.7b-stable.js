@@ -142,14 +142,6 @@ new L.GPX(
     endIcon: null,
     wptIcons: {},
     wptTypeIcons: {}
-  },
-
-  polyline_options: {
-    color: '#1565C0',
-    weight: 5,
-    opacity: 0.95,
-    lineCap: 'round',
-    lineJoin: 'round'
 }
 }
 )
@@ -171,12 +163,9 @@ new L.GPX(
     wptTypeIcons: {}
   },
   polyline_options: {
-    color: '#1565C0',
-    weight: 5,
-    opacity: 0.95,
-    lineCap: 'round',
-    lineJoin: 'round'
-}
+    color: 'red',
+    weight: 6
+  }
 }
 ).addTo(gpxGroup);
 new L.GPX(
@@ -190,12 +179,9 @@ new L.GPX(
     wptTypeIcons: {}
   },
   polyline_options: {
-    color: '#1565C0',
-    weight: 5,
-    opacity: 0.95,
-    lineCap: 'round',
-    lineJoin: 'round'
-}
+    color: 'green',
+    weight: 6
+  }
 }
 ).on('loaded', function(e) {
   e.target.getLayers().forEach(function(layer) {
@@ -215,12 +201,9 @@ new L.GPX(
   wptTypeIcons: {}
 },
   polyline_options: {
-    color: '#1565C0',
-    weight: 5,
-    opacity: 0.95,
-    lineCap: 'round',
-    lineJoin: 'round'
-}
+    color: 'purple',
+    weight: 5
+  }
 }
 ).addTo(gpxGroup);
 
@@ -235,12 +218,9 @@ new L.GPX(
   wptTypeIcons: {}
 },
   polyline_options: {
-    color: '#1565C0',
-    weight: 5,
-    opacity: 0.95,
-    lineCap: 'round',
-    lineJoin: 'round'
-}
+    color: 'orange',
+    weight: 5
+  }
 }
 ).addTo(gpxGroup);
 
@@ -255,12 +235,9 @@ new L.GPX(
   wptTypeIcons: {}
 },
   polyline_options: {
-    color: '#1565C0',
-    weight: 5,
-    opacity: 0.95,
-    lineCap: 'round',
-    lineJoin: 'round'
-}
+    color: 'brown',
+    weight: 5
+  }
 }
 ).addTo(gpxGroup);
 new L.GPX(
@@ -274,12 +251,9 @@ new L.GPX(
   wptTypeIcons: {}
 },
   polyline_options: {
-    color: '#1565C0',
-    weight: 5,
-    opacity: 0.95,
-    lineCap: 'round',
-    lineJoin: 'round'
-}
+    color: 'darkblue',
+    weight: 5
+  }
 }
 ).addTo(gpxGroup);
 new L.GPX(
@@ -293,12 +267,9 @@ new L.GPX(
   wptTypeIcons: {}
 },
   polyline_options: {
-    color: '#1565C0',
-    weight: 5,
-    opacity: 0.95,
-    lineCap: 'round',
-    lineJoin: 'round'
-}
+    color: 'darkmagenta',
+    weight: 5
+  }
 }
 ).addTo(gpxGroup);
 new L.GPX(
@@ -312,12 +283,9 @@ new L.GPX(
   wptTypeIcons: {}
 },
   polyline_options: {
-    color: '#1565C0',
-    weight: 5,
-    opacity: 0.95,
-    lineCap: 'round',
-    lineJoin: 'round'
-}
+    color: 'darkcyan',
+    weight: 5
+  }
 }
 ).addTo(gpxGroup);
 new L.GPX(
@@ -331,12 +299,9 @@ new L.GPX(
   wptTypeIcons: {}
 },
   polyline_options: {
-    color: '#1565C0',
-    weight: 5,
-    opacity: 0.95,
-    lineCap: 'round',
-    lineJoin: 'round'
-}
+    color: 'deeppink',
+    weight: 5
+  }
 }
 ).addTo(gpxGroup);
 new L.GPX(
@@ -350,12 +315,9 @@ new L.GPX(
   wptTypeIcons: {}
 },
   polyline_options: {
-    color: '#1565C0',
-    weight: 5,
-    opacity: 0.95,
-    lineCap: 'round',
-    lineJoin: 'round'
-}
+    color: 'gold',
+    weight: 5
+  }
 }
 ).addTo(gpxGroup);
 new L.GPX(
@@ -369,12 +331,9 @@ new L.GPX(
   wptTypeIcons: {}
 },
   polyline_options: {
-    color: '#1565C0',
-    weight: 5,
-    opacity: 0.95,
-    lineCap: 'round',
-    lineJoin: 'round'
-}
+    color: 'navy',
+    weight: 5
+  }
 }
 ).addTo(gpxGroup);
 new L.GPX(
@@ -388,12 +347,9 @@ new L.GPX(
   wptTypeIcons: {}
 },
   polyline_options: {
-    color: '#1565C0',
-    weight: 5,
-    opacity: 0.95,
-    lineCap: 'round',
-    lineJoin: 'round'
-}
+    color: 'darkred',
+    weight: 5
+  }
 }
 ).addTo(gpxGroup);
 new L.GPX(
@@ -407,12 +363,9 @@ new L.GPX(
   wptTypeIcons: {}
 },
   polyline_options: {
-    color: '#1565C0',
-    weight: 5,
-    opacity: 0.95,
-    lineCap: 'round',
-    lineJoin: 'round'
-}
+    color: 'darkgreen',
+    weight: 5
+  }
 }
 ).addTo(gpxGroup);
 new L.GPX(
@@ -426,12 +379,9 @@ new L.GPX(
   wptTypeIcons: {}
 },
   polyline_options: {
-    color: '#1565C0',
-    weight: 5,
-    opacity: 0.95,
-    lineCap: 'round',
-    lineJoin: 'round'
-}
+    color: 'black',
+    weight: 5
+  }
 }
 ).addTo(gpxGroup);
 
@@ -560,7 +510,7 @@ L.control.scale({
 }).addTo(map);
 
 
- const etapes = [
+const etapes = [
 {
   nom: "J1 – Margariti",
   coords: [39.3582, 20.4384],
@@ -688,43 +638,19 @@ etapes.forEach(function(e) {
   L.marker(e.coords)
     .addTo(map)
     .bindPopup(
-`<div style="
-    min-width:290px;
-    max-width:320px;
-    padding:6px 4px;
-    font-size:17px;
-    line-height:1.6;
-">
+           `<div style="font-size:15px;line-height:1.5;min-width:220px;">
+      <h3 style="margin:0 0 8px 0;color:#0b5fa5;">${e.nom}</h3>
 
-<h3 style="
-    margin:0 0 12px 0;
-    color:#0b5fa5;
-    font-size:22px;
-">
-${e.nom}
-</h3>
+      🚴 <b>Distance :</b> ${e.distance}<br>
+      ⛰️ <b>D+ :</b> ${e.denivele}<br>
+      🛏️ <b>Hébergement :</b> ${e.hotel}<br><br>
 
-🚴 <b>Distance :</b> ${e.distance}<br>
-⛰️ <b>D+ :</b> ${e.denivele}<br>
-🛏️ <b>Hébergement :</b> ${e.hotel}
-
-<div style="margin-top:16px;text-align:center;">
-<a href="https://www.openrunner.com/route-details/${e.openrunner}"
-   target="_blank"
-   style="
-      display:inline-block;
-      padding:10px 18px;
-      background:#0b5fa5;
-      color:white;
-      text-decoration:none;
-      border-radius:8px;
-      font-weight:bold;
-   ">
-📍 Parcours OpenRunner
-</a>
-</div>
-
-</div>`);
+      <a href="https://www.openrunner.com/route-details/${e.openrunner}"
+         target="_blank">
+         📍 Parcours OpenRunner
+      </a>
+      </div>`
+    );
 
 });
 
