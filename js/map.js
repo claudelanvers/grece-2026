@@ -689,8 +689,9 @@ etapes.forEach(function(e) {
     .addTo(map)
     .bindPopup(
 `<div style="
-    min-width:290px;
-    max-width:320px;
+    min-width:285px;
+    width:85vw;
+    max-width:340px;
     padding:6px 4px;
     font-size:17px;
     line-height:1.6;
