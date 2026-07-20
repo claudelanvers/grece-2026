@@ -27,7 +27,7 @@ const satellite = L.tileLayer(
 // =========================
 // Icônes des points d'intérêt
 // =========================
-const taillePOI = window.innerWidth < 700 ? 42 : 32;
+const taillePOI = 80;
 const ancreX = taillePOI / 2;
 const ancreY = taillePOI;
 const icons = {
