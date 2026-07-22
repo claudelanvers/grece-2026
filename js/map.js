@@ -1,6 +1,5 @@
 const map = L.map('map').setView([38.3, 22.0], 7);
 
-
 // --- Fonds de carte ---
 
 const osm = L.tileLayer(
@@ -136,6 +135,27 @@ L.easyButton('fa-home', function () {
         padding: [20, 20]
     });
 }, 'Afficher tout le parcours').addTo(map);
+// =========================
+// Plein écran
+// =========================
+
+L.easyButton('fa-expand', function () {
+
+    if (!document.fullscreenElement) {
+
+        document.documentElement.requestFullscreen().catch(err => {
+            console.log(err);
+        });
+
+    } else {
+
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        }
+
+    }
+
+}, 'Plein écran').addTo(map);
 new L.GPX(
 'gpx/a_j1_vers_margariti-24158784-1780826430-638.gpx',
 {
@@ -693,7 +713,9 @@ iconAnchor: window.innerWidth < 700 ? [21, 68] : [12, 41],
   openrunner: "24161523"
 }
 ];
- 
+ // Taille adaptative des marqueurs d'étapes
+const tailleEtape = window.innerWidth < 700 ? 48 : 36;
+const ancreEtape = tailleEtape / 2;
 etapes.forEach(function(e, i) {
 const iconeEtapeJour = L.divIcon({
     className: '',
@@ -702,8 +724,8 @@ const iconeEtapeJour = L.divIcon({
         J${i + 1}
       </div>
     `,
-    iconSize: [36, 36],
-    iconAnchor: [18, 18]
+   iconSize: [tailleEtape, tailleEtape],
+iconAnchor: [ancreEtape, ancreEtape]
 });
   L.marker(e.coords, { icon: iconeEtapeJour })
     .addTo(map)
