@@ -246,17 +246,128 @@ h1 {
     line-height: clamp(32px, 5.5vw, 44px);
     box-shadow: 0 2px 6px rgba(0,0,0,.35);
 }
+.version {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+
+    background: rgba(255,255,255,0.85);
+    color: #555;
+
+    padding: 4px 8px;
+    border-radius: 8px;
+
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+
+    box-shadow: 0 1px 5px rgba(0,0,0,.25);
+
+    pointer-events: none;
+}
+/* ===========================
+   SPLASH SCREEN
+=========================== */
+
+#splash {
+
+    position: fixed;
+    inset: 0;
+
+    background: linear-gradient(180deg,#1565C0,#0B4A8B);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 99999;
+
+    transition: opacity 0.8s ease;
+
+}
+
+#splash img{
+
+    width:180px;
+    height:180px;
+
+    border-radius:36px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.35);
+
+    margin-bottom:10px;
+
+}
+
+#splash h1{
+
+    margin:25px 0 8px;
+
+    color:white;
+
+    font-family:Arial,sans-serif;
+
+    font-size:34px;
+
+}
+#splash h1{
+
+    margin:30px 0 10px;
+
+    color:white;
+
+    font-family:Arial,sans-serif;
+
+    font-size:42px;
+
+    font-weight:bold;
+
+}
+#splash p{
+
+    color:white;
+
+    font-size:24px;
+
+}
+
+#splash small{
+
+    margin-top:25px;
+
+    color:#dbe9ff;
+
+    font-size:16px;
+
+}
 </style>
 <title>Carte Grèce 2026</title>
 
 </head>
 <body>
+<div id="splash">
 
+    <img src="icons/icon-512.png">
+
+    <h1>🇬🇷 Grèce 2026</h1>
+
+    <p>Le Péloponnèse à vélo</p>
+
+    <small>Version 6.1</small>
+
+</div>
 <div class="titre-carte">
     🇬🇷 Grèce 2026
 </div>
 
 <div id="map" style="height:92vh; width:100%;"></div>
+
+<div class="version">
+    V6.1
+</div>
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css">
 <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
@@ -265,6 +376,26 @@ h1 {
 <script src="https://cdn.jsdelivr.net/npm/leaflet-gpx@2.1.2/gpx.min.js"></script>
 
 <script src="js/map.js"></script>
+<script>
 
+window.addEventListener("load", function(){
+
+    setTimeout(function(){
+
+        const splash=document.getElementById("splash");
+
+        splash.style.opacity="0";
+
+        setTimeout(function(){
+
+            splash.remove();
+
+        },800);
+
+    },1000);
+
+});
+
+</script>
 </body>
 </html>
