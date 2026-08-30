@@ -1239,17 +1239,12 @@ categorie: "antiquite",
 // Ferries
 // =========================
 
-L.circleMarker([38.6270, 20.606667], {
-    radius: 15,
-    color: "blue",
-    fillColor: "blue",
-    fillOpacity: 1
-})
-.addTo(map)
-.bindPopup(`
+L.marker([38.6270, 20.606667])
+  .addTo(map)
+  .bindPopup(`
     <b>⛴️ Ferry Vasiliki → Fiskardo</b><br>
     <b>West Ferries</b><br>
     📅 4 octobre 2026<br>
     🕚 Départ : 11h00<br>
     🕛 Arrivée : 12h00
-`);
+  `);
