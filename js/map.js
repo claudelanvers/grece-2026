@@ -1235,3 +1235,26 @@ categorie: "antiquite",
     maps: "https://maps.google.com/?q=37.6379,21.6300"
 
 });
+// =========================
+// Ferries
+// =========================
+
+L.marker([38.6270, 20.606667])
+  .addTo(map)
+  .bindPopup(`
+    <b>⛴️ Ferry Vasiliki → Fiskardo</b><br>
+    <b>West Ferries</b><br>
+    📅 4 octobre 2026<br>
+    🕚 Départ : 11h00<br>
+    🕛 Arrivée : 12h00
+  `);
+
+L.marker([38.1491, 20.7797])
+  .addTo(map)
+  .bindPopup(`
+    <b>⛴️ Ferry Poros → Kyllini</b><br>
+    <b>Levante Ferries</b><br>
+    📅 5 octobre 2026<br>
+    🕔 Départ : 5h00<br>
+    🕡 Arrivée : 6h30
+  `);
