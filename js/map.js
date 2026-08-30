@@ -630,7 +630,7 @@ iconAnchor: window.innerWidth < 700 ? [21, 68] : [12, 41],
 },
 {
   nom: "J5 – Zacharo",
-  coords: [37.4830, 21.6500],
+  coords: [37.4550811, 21.6405500],
   distance: "82,3 km",
   denivele: "486 m",
   hotel: "Ostria Hotel Kakovatos beach",
