@@ -629,7 +629,7 @@ iconAnchor: window.innerWidth < 700 ? [21, 68] : [12, 41],
   coords: [37.4830, 21.6500],
   distance: "82,3 km",
   denivele: "486 m",
-  hotel: "Rex",
+  hotel: "Ostria Hotel Kakovatos beach",
   openrunner: "24158926"
 },
   {
