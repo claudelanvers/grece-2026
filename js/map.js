@@ -605,7 +605,7 @@ iconAnchor: window.innerWidth < 700 ? [21, 68] : [12, 41],
   coords: [38.9597, 20.7517],
   distance: "66,3 km",
   denivele: "615 m",
-  hotel: "Maissance",
+  hotel: "Preveza City Comfort hotel",
   openrunner: "24158803"
 },
 {
