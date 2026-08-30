@@ -462,9 +462,13 @@ new L.GPX(
 
 
 
-L.marker([37.483, 21.650])
+L.marker([37.4550811, 21.6405500])
 .addTo(map)
-.bindPopup('<b>Rex</b><br>Zacharo');
+.bindPopup(
+  '<b>Ostria Hotel Kakovatos Beach</b><br>' +
+  'Kakovatos Beach<br>' +
+  'Zacharo, 27054, Grèce'
+);
 
 L.marker([36.913, 21.696])
 .addTo(map)
