@@ -1235,6 +1235,13 @@ categorie: "antiquite",
     maps: "https://maps.google.com/?q=37.6379,21.6300"
 
 });
+//icone ferries
+const ferryIcon = L.divIcon({
+  className: 'ferry-icon',
+  html: '⛴️',
+  iconSize: [42, 42],
+  iconAnchor: [21, 21]
+});
 // =========================
 // Ferries
 // =========================
