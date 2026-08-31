@@ -1246,7 +1246,9 @@ const ferryIcon = L.divIcon({
 // Ferries
 // =========================
 
-L.marker([38.6270, 20.606667])
+L.marker([38.6270, 20.606667], {
+  icon: ferryIcon
+})
   .addTo(map)
   .bindPopup(`
     <b>⛴️ Ferry Vasiliki → Fiskardo</b><br>
