@@ -1257,9 +1257,7 @@ L.marker([38.6270, 20.606667], {
     🕚 Départ : 11h00<br>
     🕛 Arrivée : 12h00
   `);
-L.marker([38.1491, 20.7797], {
-  icon: ferryIcon
-})
+L.marker([38.1491, 20.7797])
   .addTo(map)
   .bindPopup(`
     <b>⛴️ Ferry Poros → Kyllini</b><br>
