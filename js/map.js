@@ -1239,8 +1239,8 @@ categorie: "antiquite",
 const ferryIcon = L.divIcon({
   className: 'ferry-icon',
   html: '⛴️',
-  iconSize: [42, 42],
-  iconAnchor: [21, 21]
+  iconSize: [80, 80],
+  iconAnchor: [40, 40]
 });
 // =========================
 // Ferries
