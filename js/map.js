@@ -1268,3 +1268,23 @@ L.marker([38.1491, 20.7797], {
     🕔 Départ : 5h00<br>
     🕡 Arrivée : 6h30
   `);
+L.marker([39.488194, 20.258968], {
+  icon: ferryIcon
+})
+  .addTo(map)
+  .bindPopup(`
+    <b>⛴️ Ferry Venise → Igoumenitsa</b><br>
+    <b>ANEK Italia</b><br>
+    📅 1er septembre 2026<br>
+    🕒 Arrivée : 15h00
+  `);
+L.marker([38.227300, 21.721485], {
+  icon: ferryIcon
+})
+  .addTo(map)
+  .bindPopup(`
+    <b>⛴️ Ferry Patras → Venise</b><br>
+    <b>ANEK Italia</b><br>
+    📅 16 octobre 2026<br>
+    🕚 Départ : 23h00
+  `);
