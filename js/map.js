@@ -496,7 +496,7 @@ L.marker([37.414, 22.765])
 
 L.marker([37.568, 22.806])
 .addTo(map)
-.bindPopup('<b>Ippoliti</b><br>Nauplie');
+.bindPopup('<b>API projects apptmt</b><br>Nauplie');
 
 L.marker([37.938, 22.932])
 .addTo(map)
