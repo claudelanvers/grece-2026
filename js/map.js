@@ -504,7 +504,7 @@ L.marker([37.938, 22.932])
 
 L.marker([38.192, 22.201])
 .addTo(map)
-.bindPopup('<b>Porto & Mare</b><br>Diakopto');
+.bindPopup('<b>Panorama Hotel</b><br>Diakopto');
 
 L.marker([38.246, 21.734])
 .addTo(map)
