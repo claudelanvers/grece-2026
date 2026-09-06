@@ -689,7 +689,7 @@ iconAnchor: window.innerWidth < 700 ? [21, 68] : [12, 41],
   coords: [37.568, 22.806],
   distance: "33,2 km",
   denivele: "207 m",
-  hotel: "Ippoliti",
+  hotel: "API projects apptmt",
   openrunner: "24161429"
 },
 {
@@ -705,7 +705,7 @@ iconAnchor: window.innerWidth < 700 ? [21, 68] : [12, 41],
   coords: [38.192, 22.201],
   distance: "80,3 km",
   denivele: "276 m",
-  hotel: "Porto & Mare",
+  hotel: "Panorama Hotel",
   openrunner: "24161507"
 },
 {
