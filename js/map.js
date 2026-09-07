@@ -1327,6 +1327,7 @@ const hotelLidoIcon = L.divIcon({
     <div style="
       width:70px;
       height:70px;
+      box-sizing:border-box;
       background:#7b1fa2;
       border:4px solid white;
       border-radius:50%;
@@ -1334,7 +1335,6 @@ const hotelLidoIcon = L.divIcon({
       display:flex;
       align-items:center;
       justify-content:center;
-      color:white;
       font-size:42px;
       font-weight:bold;
       font-family:Arial,sans-serif;
