@@ -1350,9 +1350,30 @@ L.marker([45.42155, 12.376366], {
 // 🅿️ Parking – Venice City Park
 // =========================
 
+// =========================
+// 🅿️ Parking – Venice City Park
+// =========================
+
 const parkingIcon = L.divIcon({
-  className: 'parking-icon',
-  html: '<b>P</b>',
+  className: '',
+  html: `
+    <div style="
+      width:70px;
+      height:70px;
+      background:#1976d2;
+      border:4px solid white;
+      border-radius:50%;
+      box-shadow:0 2px 8px rgba(0,0,0,0.45);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      font-size:42px;
+      font-weight:bold;
+      font-family:Arial,sans-serif;
+      line-height:1;
+    ">P</div>
+  `,
   iconSize: [70, 70],
   iconAnchor: [35, 35]
 });
