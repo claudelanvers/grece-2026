@@ -1287,4 +1287,24 @@ L.marker([38.227300, 21.721485], {
     <b>ANEK Italia</b><br>
     📅 16 octobre 2026<br>
     🕚 Départ : 23h00
+  `);// =========================
+// J0 – Départ de Venise / Fusina
+// =========================
+
+L.marker([45.4090, 12.2380], {
+  icon: ferryIcon
+})
+  .addTo(map)
+  .bindPopup(`
+    <b>⛴️ J0 – Départ de Venise</b><br>
+    <b>Port de Fusina</b><br>
+    <b>ANEK Lines Italia</b><br>
+    📅 30 septembre 2026<br>
+    🕧 Départ : 12h30<br>
+    🛳️ Venise → Igoumenitsa
+    <hr>
+    <b>⛴️ Retour à Venise</b><br>
+    📅 18 octobre 2026<br>
+    🕖 Arrivée : 7h00<br>
+    🛳️ Patras → Venise
   `);
