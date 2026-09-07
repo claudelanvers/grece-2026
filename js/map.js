@@ -1291,13 +1291,17 @@ L.marker([38.227300, 21.721485], {
 // J0 – Départ de Venise / Fusina
 // =========================
 
-L.marker([45.4090, 12.2380], {
+// =========================
+// J0 – Départ de Venise / Fusina
+// =========================
+
+L.marker([45.4067, 12.2275], {
   icon: ferryIcon
 })
   .addTo(map)
   .bindPopup(`
     <b>⛴️ J0 – Départ de Venise</b><br>
-    <b>Port de Fusina</b><br>
+    <b>Port de Fusina – Terminal Ferries</b><br>
     <b>ANEK Lines Italia</b><br>
     📅 30 septembre 2026<br>
     🕧 Départ : 12h30<br>
