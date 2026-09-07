@@ -1437,3 +1437,19 @@ L.marker([45.3788, 11.9825], {
     📍 Via Brentasecca 31, Saonara<br>
     🛏️ 1 nuit
   `);
+// =========================
+// ⛴️ Traversée Venise → Igoumenitsa
+// =========================
+
+L.polyline([
+  [45.41837, 12.25872],   // Fusina – quai de départ
+  [43.90, 13.90],         // Adriatique
+  [42.30, 14.20],         // Adriatique
+  [40.80, 18.50],         // Adriatique
+  [39.488194, 20.258968]  // Igoumenitsa – terminal ANEK
+], {
+  color: '#1976d2',
+  weight: 4,
+  dashArray: '12, 10',
+  opacity: 0.75
+}).addTo(map);
