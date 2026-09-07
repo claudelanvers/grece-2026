@@ -1308,3 +1308,23 @@ L.marker([45.4090, 12.2380], {
     🕖 Arrivée : 7h00<br>
     🛳️ Patras → Venise
   `);
+// =========================
+// J18 – Lido di Venezia
+// =========================
+
+L.marker([45.42155, 12.376366], {
+  icon: L.divIcon({
+    className: 'hotel-icon',
+    html: '🏨',
+    iconSize: [60, 60],
+    iconAnchor: [30, 30]
+  })
+})
+  .addTo(map)
+  .bindPopup(`
+    <b>🏨 J18 – Lido di Venezia</b><br>
+    <b>Russo Palace Hotel</b><br>
+    📅 Du 18 au 20 octobre 2026<br>
+    📍 San Nicolò – Lido di Venezia<br>
+    🛏️ 2 nuits
+  `);
