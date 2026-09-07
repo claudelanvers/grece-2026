@@ -1346,3 +1346,24 @@ L.marker([45.42155, 12.376366], {
     📍 San Nicolò – Lido di Venezia<br>
     🛏️ 2 nuits
   `);
+// =========================
+// 🅿️ Parking – Venice City Park
+// =========================
+
+const parkingIcon = L.divIcon({
+  className: 'parking-icon',
+  html: '<b>P</b>',
+  iconSize: [70, 70],
+  iconAnchor: [35, 35]
+});
+
+L.marker([45.46760, 12.26635], {
+  icon: parkingIcon
+})
+  .addTo(map)
+  .bindPopup(`
+    <b>🅿️ Venice City Park</b><br>
+    📅 Du 30 septembre au 18 octobre 2026<br>
+    📍 Via dei Petroli, 5 – Marghera<br>
+    🅿️ Parking
+  `);
