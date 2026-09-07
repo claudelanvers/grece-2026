@@ -1316,21 +1316,31 @@ L.marker([45.41837, 12.25872], {
     🕖 Arrivée : 7h00<br>
     🛳️ Patras → Venise
   `);
-// =========================
-// J18 – Lido di Venezia
-// =========================
 
 // =========================
-// J18 – Lido di Venezia
-// =========================
-
-// =========================
-// J18 – Lido di Venezia
+// 🏨 J18 – Lido di Venezia
 // =========================
 
 const hotelLidoIcon = L.divIcon({
-  className: 'hotel-lido-icon',
-  html: '🏨',
+  className: '',
+  html: `
+    <div style="
+      width:70px;
+      height:70px;
+      background:#7b1fa2;
+      border:4px solid white;
+      border-radius:50%;
+      box-shadow:0 2px 8px rgba(0,0,0,0.45);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      font-size:42px;
+      font-weight:bold;
+      font-family:Arial,sans-serif;
+      line-height:1;
+    ">🏨</div>
+  `,
   iconSize: [70, 70],
   iconAnchor: [35, 35]
 });
