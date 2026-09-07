@@ -1442,7 +1442,11 @@ L.marker([45.3788, 11.9825], {
 // =========================
 
 L.polyline([
-  [45.41837, 12.25872],   // Fusina – quai de départ
+  [45.41837, 12.25872],   // Fusina – départ
+  [43.0000, 13.2000],     // Adriatique
+  [41.0000, 16.5000],     // Adriatique
+  [39.6500, 19.9000],     // Est / nord-est de Corfou
+  [39.5500, 20.1500],     // Entrée du détroit
   [39.488194, 20.258968]  // Igoumenitsa – arrivée
 ], {
   color: '#e53935',
