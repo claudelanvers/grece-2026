@@ -1299,7 +1299,7 @@ L.marker([38.227300, 21.721485], {
 // J0 – Départ de Venise / Fusina
 // =========================
 
-L.marker([45.426549, 12.250077], {
+L.marker([45.41837, 12.25872], {
   icon: ferryIcon
 })
   .addTo(map)
