@@ -1451,3 +1451,31 @@ L.polyline([
   opacity: 0.9,
   lineCap: 'round'
 }).addTo(map);
+// =========================
+// ⛴️ Traversée Vasiliki → Fiskardo
+// =========================
+
+L.polyline([
+  [38.6270, 20.606667],  // Vasiliki
+  [38.4593, 20.5798]     // Fiskardo
+], {
+  color: '#e53935',
+  weight: 8,
+  dashArray: '18, 12',
+  opacity: 0.9,
+  lineCap: 'round'
+}).addTo(map);
+// =========================
+// ⛴️ Traversée Poros → Kyllini
+// =========================
+
+L.polyline([
+  [38.1491, 20.7797],    // Poros – Céphalonie
+  [38.10244, 21.34979]   // Kyllini
+], {
+  color: '#e53935',
+  weight: 8,
+  dashArray: '18, 12',
+  opacity: 0.9,
+  lineCap: 'round'
+}).addTo(map);
