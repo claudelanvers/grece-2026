@@ -1398,3 +1398,42 @@ L.marker([45.46760, 12.26635], {
     📍 Via dei Petroli, 5 – Marghera<br>
     🅿️ Parking
   `);
+// =========================
+// 🏨 J-1 – Padoue
+// =========================
+
+const hotelPadovaIcon = L.divIcon({
+  className: '',
+  html: `
+    <div style="
+      width:70px;
+      height:70px;
+      box-sizing:border-box;
+      background:#7b1fa2;
+      border:4px solid white;
+      border-radius:50%;
+      box-shadow:0 2px 8px rgba(0,0,0,0.45);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:42px;
+      font-weight:bold;
+      font-family:Arial,sans-serif;
+      line-height:1;
+    ">🏨</div>
+  `,
+  iconSize: [70, 70],
+  iconAnchor: [35, 35]
+});
+
+L.marker([45.3788, 11.9825], {
+  icon: hotelPadovaIcon
+})
+  .addTo(map)
+  .bindPopup(`
+    <b>🏨 J-1 – Padoue</b><br>
+    <b>Burro e Marmellata</b><br>
+    📅 29 septembre 2026<br>
+    📍 Via Brentasecca 31, Saonara<br>
+    🛏️ 1 nuit
+  `);
