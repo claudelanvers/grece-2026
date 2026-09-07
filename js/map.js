@@ -1320,14 +1320,11 @@ L.marker([45.426549, 12.250077], {
 // J18 – Lido di Venezia
 // =========================
 
-L.marker([45.42155, 12.376366], {
-  icon: L.divIcon({
-    className: 'hotel-icon',
-    html: '🏨',
-    iconSize: [60, 60],
-    iconAnchor: [30, 30]
-  })
-})
+// =========================
+// J18 – Lido di Venezia
+// =========================
+
+L.marker([45.42155, 12.376366])
   .addTo(map)
   .bindPopup(`
     <b>🏨 J18 – Lido di Venezia</b><br>
