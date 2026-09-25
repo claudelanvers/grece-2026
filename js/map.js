@@ -1265,8 +1265,8 @@ L.marker([38.1491, 20.7797], {
     <b>⛴️ Ferry Poros → Kyllini</b><br>
     <b>Levante Ferries</b><br>
     📅 5 octobre 2026<br>
-    🕔 Départ : 5h00<br>
-    🕡 Arrivée : 6h30
+    🕔 Départ : 5h45<br>
+    🕡 Arrivée : 7h15
   `);
 L.marker([39.488194, 20.258968], {
   icon: ferryIcon
