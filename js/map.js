@@ -1352,7 +1352,7 @@ L.marker([45.42155, 12.376366], {
   .bindPopup(`
     <b>🏨 J18 – Lido di Venezia</b><br>
     <b>Russo Palace Hotel</b><br>
-    📅 Du 18 au 20 octobre 2026<br>
+    📅 Du 18 au 20 octobre 2026 ANNULÉ<br>
     📍 San Nicolò – Lido di Venezia<br>
     🛏️ 2 nuits
   `);
