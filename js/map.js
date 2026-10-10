@@ -1285,8 +1285,8 @@ L.marker([38.227300, 21.721485], {
   .bindPopup(`
     <b>⛴️ Ferry Patras → Venise</b><br>
     <b>ANEK Italia</b><br>
-    📅 16 octobre 2026<br>
-    🕚 Départ : 23h00
+    📅 15 octobre 2026<br>
+    🕚 Départ : 23h59
   `);// =========================
 // J0 – Départ de Venise / Fusina
 // =========================
